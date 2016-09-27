@@ -1,0 +1,721 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="Credit Check" />
+    <meta name="author" content="" />
+    <meta property="og:title" content="Credit Check | Mtel" />
+    <meta property="og:url" content="http://www.mtelnet.com/asset/works/credit-check.html" />
+    <meta property="og:image" content="http://www.mtelnet.com/images/works/work_detail_hkia_bg.png" />
+    <meta property="og:description" content="Credit Check" />
+    <meta name="generator" content="DocPad v6.78.1" />
+    <meta http-equiv="Content-Language" content="en-US" />
+    <title>Credit Check | Mtel</title>
+    <link rel="canonical" href="http://www.mtelnet.com/asset/works/credit-check.html" />
+    <link rel="shortlink" href="/" />
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
+    <link rel="stylesheet" href="./../../css/jquery_mCustomScrollbar.css" />
+    <link rel="stylesheet" href="./../../css/bootstrap_min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel|Ubuntu:300" />
+    <link rel="stylesheet" href="./../../css/idangerous_swiper.css" />
+    <link rel="stylesheet" href="./../../css/ani.css" />
+    <link rel="stylesheet" href="./../../css/common.css" />
+    <link rel="stylesheet" href="./../../css/credit-check.css" />
+    <style>
+    html.wait {
+        cursor: wait !important;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    </style>
+    <script type="text/javascript" src="./../../vendor/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="./../../vendor/jquery.easing-1.3.pack.js"></script>
+    <script type="text/javascript" src="./../../vendor/modernizr.js"></script>
+    <script type="text/javascript" src="./../../vendor/ie-emulation-modes-warning.js"></script>
+    <script type="text/javascript" src="./../../vendor/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="./../../vendor/css_browser_selector.js"></script>
+    <script type="text/javascript" src="./../../vendor/idangerous.swiper.min.js"></script>
+    <script type="text/javascript" src="./../../vendor/jquery.ddslick.min.js"></script>
+    <script type="text/javascript" src="./../../vendor/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="./../../vendor/jquery.stellar.min.js"></script>
+    <script type="text/javascript" src="./../../vendor/jquery.cookie.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm-azHFWWO-Lv7xlffxENHgoSbnCK9gSI"></script>
+    <script type="text/javascript" src="//use.typekit.net/sjc4cmk.js"></script>
+    <script type="text/javascript" src="./../../scripts/config.js"></script>
+    <script type="text/javascript" src="./../../scripts/common.js"></script>
+    <script type="text/javascript">
+
+        function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+	    var ratio = 1920 / 1080; //youtube default ratio
+
+	    function screenResize() {
+	        var w = $(window).width();
+
+	        if ($(window).width() > 768) {
+	            $('.videoContainer .videoDiv .video').css('width', w * .8);
+	            $('.youtubePlayer').attr('width', w *  .8 );
+	            $('.youtubePlayer').attr('height', w * .8  / ratio);
+	        } else {
+	            $('.youtubePlayer').attr('width', w * .9);
+	            $('.youtubePlayer').attr('height', w * .9 / ratio);
+	        }
+	    }
+
+        function openNewTab(url){
+            // var url = $(this).attr('url');
+            // console.log(url);
+            var win = window.open(url, '_blank');
+        }
+	    $(document).ready(function() {
+            if(getUrlParameter('q') == 'pp'){
+                setTimeout(function(){
+                    $('.moreInfoPart').hide();
+                    $('.moreInfoPart.privacy').show();
+
+                    $('.infoBox').attr('status','inactive');
+                    $('.infoBox.privacy').attr('status','active');
+                    if ($(window).width() > 768) {
+                        $('body').scrollTop($('.moreInfoPart.privacy').offset().top);
+                    }
+                },200);
+                
+            }else if(getUrlParameter('q') == 'tnc'){
+                setTimeout(function(){
+                    $('.moreInfoPart').hide();
+                    $('.moreInfoPart.tnc').show();
+
+                    $('.infoBox').attr('status','inactive');
+                    $('.infoBox.tnc').attr('status','active');
+                    if ($(window).width() > 768) {
+                        $('body').scrollTop($('.moreInfoPart.tnc').offset().top);
+                    }
+                },200);
+            }
+
+	        screenResize();
+	        $('.moreInfoPart.privacy .container').load('Privacy_Policy.html',function(){});
+	        $('.moreInfoPart.tnc .container').load('Terms_Conditions.html',function(){});
+
+	        var swiper = new Swiper('.swiper-container', {
+	            slidesPerView: 1,
+	            calculateHeight: true,
+                pagination: '.swiper-pagination',
+	            loop:true
+	        });
+	        $('.prevBtn').bind('click', function() {
+	            swiper.swipePrev();
+	        });
+
+	        $('.nextBtn').bind('click', function() {
+	            swiper.swipeNext();
+	        });
+
+	        $('.infoBox.faq').bind('click',function(){
+	        	if($(this).attr('status') == 'active'){
+
+				}else{
+					$('.moreInfoPart').hide();
+					$('.moreInfoPart.faq').show();
+
+					$('.infoBox').attr('status','inactive');
+					$(this).attr('status','active');
+				}
+	        });
+	        $('.infoBox.privacy').bind('click',function(){
+	        	if($(this).attr('status') == 'active'){
+
+				}else{
+					$('.moreInfoPart').hide();
+					$('.moreInfoPart.privacy').show();
+
+					$('.infoBox').attr('status','inactive');
+					$(this).attr('status','active');
+				}
+	        });
+	        $('.infoBox.tnc').bind('click',function(){
+	        	if($(this).attr('status') == 'active'){
+
+				}else{
+					$('.moreInfoPart').hide();
+					$('.moreInfoPart.tnc').show();
+
+					$('.infoBox').attr('status','inactive');
+					$(this).attr('status','active');
+				}
+	        });
+
+	        $('.more').bind('click',function(){
+	        	if($(this).attr('status') == 'hide'){
+	        		$(this).attr('status','show');
+                    $(this).parent().parent().find('.answer').css('display','inline-table');
+		        	$(this).parent().parent().css('height','auto');
+		        }else{
+		        	$(this).attr('status','hide');
+		        	$(this).parent().parent().find('.answer').hide();
+
+                    if($(window).width() >414){
+                        $(this).parent().parent().css('height','212px');
+                    }else{
+                        $(this).parent().parent().css('height','152px');
+                    }
+                    
+		        }
+
+	        });
+	    });
+	    
+	    $(window).resize(function() {
+	        screenResize();
+	    });
+    </script>
+</head>
+
+<body style="background: #FFF;">
+    <div id="cover"></div>
+    <div id="creditCheck" class="detailPage">
+        <header>
+            <nav class="navbar navbar-fixed-top" role="navigation">
+                <a class="company-logo" href="/index.html">
+                    <img class="whiteLogo" src="./../../images/0.0_home_output-assets/header_mtel_logo.png" />
+                    <img class="greyLogo" src="./../../images/works/header_mtel_logo_grey.png" />
+                </a>
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/index.html">
+                            <img src="./../../images/0.0_home_output-assets/header_mtel_logo.png" /></a>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-home nav-item"><a href="./../../index.html">Home</a></li>
+                            <li class="nav-works nav-item"><a href="./../../works.html">Works</a></li>
+                            <li class="nav-about nav-item"><a href="./../../about.html">About</a></li>
+                            <li class="nav-contact nav-item"><a href="./../../contactus.html">Contact</a></li>
+                            <li class="nav-joinus nav-item"><a href="./../../joinus.html">Join us</a></li>
+                            <li class="nav-news nav-item"><a href="./../../news.html">News</a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <div class="shareDiv">
+                    <a href="http://www.mtellab.com/">
+                        <div class="share shareLab"></div>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCYQhfzcGZEcFdGgVk0wwcXQ" target="_blank">
+                        <div class="share shareYoutube"></div>
+                    </a>
+                    <a href="https://www.linkedin.com/company/mtel-limited" target="_blank">
+                        <div class="share shareLinkin"></div>
+                    </a>
+                    <a href="https://www.facebook.com/MTelLimited" target="_blank">
+                        <div class="share shareFb"></div>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <div id="mainContent">
+            <section class="section s1" style="background-image: url('./../../images/works/work_detail_credit check_bg color.png');">
+                <div class="textBlock">
+                    <div class="content">
+                        <div class="paragraph">
+                            <div class="overview">
+                                <div class="leftPart">
+                                    <div class="title1">???蝔? MOBILE APP</div>
+                                    <div class="title2"><img src="../../images/works/credit_check_logo.png" alt=""></div>
+                                    <div class="title"></div>
+                                    <div class="content">
+                                        靽∟硫閮??函隞冗??靘???嚗??雿??鞎⊥?瘜?鈭行?敶梢雿?敺?唾??硫甈暸?摨血??拇??
+                                        <br/>
+                                        Credit Check?臭??????函?撘??箔???銝蝡?????頛redit Check嚗?撠??脣??祥?縑鞎貉???銝閬賣??縑?典?硫甈暹???瘜??游隞亙?甇仿?甈暹??交?銝西身蝵格?????賢隞亙鼠雿?擛噶?拍恣?瓷??鞎鳴??嫣噶嚗?踝?Credit Check?臭???雿喲??
+                                        <br/>
+                                        Credit history has become increasingly important nowadays, which reflects your financial status and also determines what loans you will qualify for and the interest rate you will pay in the future.
+                                        <br/>Credit Check is a newly-launched app which provides one-stop full service for you. By downloading this app, you can get free credit data, get an overview of all your credit card and loan accounts, sync payment due dates to the in-app calendar and set up reminders, all of which lead to easy and convenient financial management and planning. Free, easy and smart, Credit Check app is definitely your best choice. 
+                                        <br/>
+                                    </div>
+                                    <div class="sepLine"></div>
+                                    <div class="platform">
+                                        <div class="row">
+                                            <div class="name">銝?撟喳 PLATFORM</div>
+                                            <div class="value">iOS &amp; Android</div>
+                                        </div>
+                                        <div class="row">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="2" style="padding-right: 15px;">
+                                                        <img class="qrcode" src="../../images/works/credit_check_qr.png" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <a href="https://itunes.apple.com/us/app/credit-check/id1131217715" target="_blank">
+                                                            <img class="appIcons iOS" src="../../images/works/btn_download_on_app_store.png" alt="">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="https://play.google.com/store/apps/details?id=com.mtel.smartloan" target="_blank">
+                                                            <img class="appIcons android" src="../../images/works/btn_download_on_google_play.png" alt="">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="rightPart">
+                                    <img src="../../images/works/work_detail_credit check_image.png" alt="">
+                                </div>
+                            </div>
+                            <div class="features">
+                                <div class="title">
+                                    ?之? MAJOR FEATURES
+                                </div>
+                                <ul>
+                                    <li class="feature">
+                                        <div class="top">
+                                            <img src="../../images/works/icon_1.png" alt="">
+                                            <br/> ?祥靽∟硫鞈? Free credit data
+                                        </div>
+                                        <div class="details">
+                                            ?祥?亦?靽∟硫閰?嚗脖?甇亦閫?撌梁?鞎∪??瘜?
+                                            <br/> Check your credit score?for free to see where you stand?and know better about your financial position
+                                        </div>
+
+                                    </li>
+                                    <li class="feature">
+                                        <div class="top">
+                                            <img src="../../images/works/icon_2.png" alt="">
+                                            <br/> 銝蝡??嗅璁汗 Account overview
+                                        </div>
+                                        <div class="details">
+                                           ?仿??銵?鞎∪?璈?摰?硫甈曉?靽∠?∠?擗???
+                                            <br/> See your credit accounts across different financial institutions to get a complete and up-to-date picture of your credit history  
+                                        </div>
+                                    </li>
+                                    <li class="feature">
+                                        <div class="top">
+                                            <img src="../../images/works/icon_3.png" alt="">
+                                            <br/> ?瓷?寞? Financial solutions 
+                                        </div>
+                                        <div class="details">
+                                            蝔??扯身蝯?頧?芸?閮??嚗?雿閫?憭?鞎⊿????蝭??舀??
+                                            <br/> Get an idea of the possible financial options to help you save interests with our in-app balance transfer simulation
+                                        </div>
+                                    </li>
+                                    <li class="feature">
+                                        <div class="top">
+                                            <img src="../../images/works/icon_4.png" alt="">
+                                            <br/> ?交??? Calendar and reminder
+                                        </div>
+                                        <div class="details">
+                                            撠?????甇亥?交?嚗身摰???銝?敹??狡??
+                                            <br/>Sync all your payment due dates to the in-app calendar, set up reminder alerts and never miss another due date
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section s2">
+                <div class="videoContainer">
+                    <div class="videoDiv">
+                        <!-- 
+                        <div class="prevBtn"></div>
+                        <div class="nextBtn"></div>
+                         -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="video">
+                                        <iframe class="youtubePlayer" src="https://www.youtube.com/embed/SttBsnM7uZc?cc_load_policy=1&amp;rel=0&amp;showinfo=0&amp;hl=zh-hk" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <!-- 
+                                <div class="swiper-slide">
+                                    <div class="video">
+                                        <iframe class="youtubePlayer" src="https://www.youtube.com/embed/SttBsnM7uZc?cc_load_policy=1&amp;rel=0&amp;showinfo=0&amp;hl=zh-hk" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div> -->
+                            </div>
+        					<div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="appPart">
+                    <div class="title">
+                        CREDIT CHECK ?擐葛?硫閰僑隞?
+                    </div>
+                    <div class="subtitle">
+                        DOWNLOAD CREDIT CHECK - CHECK NOW!
+                    </div>
+                    <div class="appIcon">
+                        <a href="https://creditcheckapp.hk/dl.html" target="_blank">
+                            <img src="../../images/works/app icon.png" alt="">
+                        </a>
+                        <br/> 
+                        <div>
+                        	銝??抒?活銝?雿?靽∟硫?勗?
+                        	<br/> 3 month unlimited download of Credit Data
+                        </div>
+                    </div>
+                    <div class="moreDetails">
+                        憒炬鈭圾?游??靽∟硫鞈??底??隢汗?啗蝬脤?
+                        <br/> For getting more details about credit data, please visit TU website
+                    </div>
+                </div>
+            </section>
+            <section class="section s3">
+                <div class="title">
+                    ?賊?鞈? MORE INFO
+                </div>
+                <div class="moreInfo">
+                    <ul>
+                        <li>
+                            <div class="infoBox faq"><img src="../../images/works/FAQ.png" alt=""></div>
+                        </li>
+                        <li>
+                            <div class="infoBox privacy"><img src="../../images/works/Privacy policy.png" alt=""></div>
+                        </li>
+                        <li>
+                            <div class="infoBox tnc"><img src="../../images/works/T&amp;C.png" alt=""></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="moreInfo mobile">
+                    <ul>
+                        <li>
+                            <div class="infoBox faq">
+                                <a href="#faq"><img src="../../images/works/s_bar_F&amp;Q.png" alt=""></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="infoBox privacy">
+                                <a href="#privacy"><img src="../../images/works/s_bar_privacy policy.png" alt=""></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="infoBox tnc">
+                                <a href="#tnc"><img src="../../images/works/s_bar_T&amp;C.png" alt=""></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a name="faq">
+                    <div class="moreInfoPart faq">
+                    	<ul>
+                    		<li>
+                    			<div class="question">
+                    				<div class="headBox">Q</div>
+                    				<div class="content">
+                    					What is TransUnion Credit Score?<br/>
+                                        隞暻賣?啗靽∟硫閰?嚗?
+                    				</div>
+                    				<div class="more" status="hide"></div>
+                    			</div>
+                    			<div class="answer">
+                    				<div class="headBox">A</div>
+                    				<div class="content">
+                    					A credit score is a numerical snapshot of your credit report at a particular time. It is used to help companies better understand your financial health. Your credit score is generated by a mathematical formula utilizing the data from your TransUnion credit history. <br/>
+                                        靽∟硫閰??臭????賂??臬?孵??撠雿?靽∟硫?勗??摮?撅???臭誑撟怠?砍?游末?唬?閫???瓷?摨瑞?瘜??縑鞎貉???拍TransUnion靽∟硫閮?鋆???鞈?嚗?摰摮詨撘??
+
+                    				</div>
+                    			</div>
+                    		</li>
+                    		<li>
+                    			<div class="question">
+                    				<div class="headBox">Q</div>
+                    				<div class="content">
+                    					What type of information is used to generate my credit score?
+<br/>??靽∟硫閰??舀?鈭縑?舐??嚗?
+
+                    				</div>
+                    				<div class="more" status="hide"></div>
+                    			</div>
+                    			<div class="answer">
+                    				<div class="headBox">A</div>
+                    				<div class="content">
+                    					Information used may include your payment history, outstanding debt, credit account history, recent enquiries, and public records.
+<br/>??函?鞈??航?嚗?甈曇????拚?蝯?憿?靽∟硫?嗅閮?嚗?餈閰Ｖ誑?銵???
+
+                    				</div>
+                    			</div>
+                    		</li>
+                    		<li>
+                    			<div class="question">
+                    				<div class="headBox">Q</div>
+                    				<div class="content">
+                    					What if I cannot receive OTP when registering account or resetting password?
+<br/>憒?閮餃?鞈祆??閮剖?蝣潭??嗡??啗??蝣潭瑤颲佗?
+                    				</div>
+                    				<div class="more" status="hide"></div>
+                    			</div>
+                    			<div class="answer">
+                    				<div class="headBox">A</div>
+                    				<div class="content">
+                    					You should check your mailbox spam folder or try to resend OTP.
+<br/>雿隞交炎?仿蝞梁??蝞望???閰阡?撖?蝣潦?
+
+                    				</div>
+                    			</div>
+                    		</li>
+                    		<li>
+                    			<div class="question">
+                    				<div class="headBox">Q</div>
+                    				<div class="content">
+What kind of information will be shown in this app? Does it contain as much information as those from a report that I purchase from TransUnion?
+<br/>Credit Check?蝔??＊蝷箏鈭縑?荔???靽⊥???啗鞈潸眺?縑鞎詨??璅??嚗?
+                    				</div>
+                    				<div class="more" status="hide"></div>
+                    			</div>
+                    			<div class="answer">
+                    				<div class="headBox">A</div>
+                    				<div class="content">
+The app contains credit score and credit line information from the full report, while TransUnion full credit report contains other parts including personal information, payment history, open account details, enquiry history etc. In addition, Credit Check also provides financial advice and simulated calculation, which is not included in the report. In terms of accounts shown in Credit Check, it will only display the following information:
+<br/>&nbsp;&nbsp;&nbsp;??Account types: 
+<br/>&nbsp;&nbsp;&nbsp;- Secured HP/ Leasing Accounts, Installment Accounts, Charge Card and Credit Cards & Revolving Loan will be shown. Mortgage, Corporate Cards and Others are excluded. 
+<br/>&nbsp;&nbsp;&nbsp;??Account Status 
+<br/>&nbsp;&nbsp;&nbsp;- Active, Default amount settled, inactive, past due and legal action accounts will be shown. Write-off, Bankruptcy Write-off and Closed accounts are excluded.
+<br/>&nbsp;&nbsp;&nbsp;??Account Associate Code
+<br/>&nbsp;&nbsp;&nbsp;- Individual account will be shown, company and accounts that the user has guaranteed but are not opened under the user? name will be excluded.
+<br/>閰脫??函?撘??砌縑鞎詨???靽∟硫閰??縑鞎貉閉?嗥???靽⊥嚗???渡??啗靽∟硫?勗???游??嗅?鞈???犖靽⊥嚗?甈曇?????鞈祆閰喟敦靽⊥嚗閰Ｚ???蝑甇支?憭?Credit Check?蝔???靘?臭縑鞎詨???瑕??瓷?遣霅啣?璅⊥閮???redit Check?蝔??＊蝷箇?鞈祆憿?憒?嚗?
+<br/>&nbsp;&nbsp;&nbsp;???嗅憿?
+<br/>&nbsp;&nbsp;&nbsp;- Secured HP/ Leasing Accounts嚗?????Charge Card嚗縑?典?儐?啗硫甈曉??＊蝷箝??哨??砍?∪??嗡??嗅撠??＊蝷箝?
+<br/>&nbsp;&nbsp;&nbsp;???嗅???
+<br/>&nbsp;&nbsp;&nbsp;- 瘣餉?嚗歇隞?甈橘??暑頨??暹?隞亙??脰?瘜?銵??????＊蝷箝撣喉??渡?瑕董隞亙?撌脤????嗅撠??＊蝷箝?
+<br/>&nbsp;&nbsp;&nbsp;??撣單?蝣?
+<br/>&nbsp;&nbsp;&nbsp;- ?犖?嗅撠?憿舐內??豢???隞亙??梯府?冽??雿蒂銝?蝡?嗅?銝??嗅撠??＊蝷箝?
+
+                    				</div>
+                    			</div>
+                    		</li>
+                            <li>
+                                <div class="question">
+                                    <div class="headBox">Q</div>
+                                    <div class="content">
+How often can I refresh my credit data? Is it free?
+<br/>?隞交?唬縑鞎貉????餌??臬?撠??臬?鞎餌???
+
+                                    </div>
+                                    <div class="more" status="hide"></div>
+                                </div>
+                                <div class="answer">
+                                    <div class="headBox">A</div>
+                                    <div class="content">
+At the moment, you have unlimited free download and refresh. However, this offer is subject to changes and we will notify accordingly. 
+<br/>?暸?畾萎??臭誑?祥?⊿?甈⊥銝?銝行?唬縑鞎貉???迨?芣???質??湛????西????
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="question">
+                                    <div class="headBox">Q</div>
+                                    <div class="content">
+I just paid my installment/used my credit card, why is it not shown in the app?
+<br/>????鈭???甈暸?/雿輻鈭縑?典嚗隞暻賣??函?撘??＊蝷綽?
+                                    </div>
+                                    <div class="more" status="hide"></div>
+                                </div>
+                                <div class="answer">
+                                    <div class="headBox">A</div>
+                                    <div class="content">
+TransUnion? member is responsible for updating consumer records to TransUnion? database. In general, the bank would update the status automatically. The bank shall submit data for each reporting period not exceeding 31 days but the exact upload date varies. The updated records therefore will be shown on the report around 45 days.
+<br/>?啗?鞎痊撠?鞎餉????喳?啗?豢?摨怒虜嚗?銵??啁????冽?31?亙?銝漱靽⊥嚗??舀???銵擃?銝?交?銝???隞伐??湔??鞈??虜?45?亙椰?喲＊蝷箏?勗?銝?
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="question">
+                                    <div class="headBox">Q</div>
+                                    <div class="content">
+Does using CreditCheck impact my credit score?
+<br/>雿輻Credit Check?蝔??蔣?踵??縑鞎貉???嚗?
+                                    </div>
+                                    <div class="more" status="hide"></div>
+                                </div>
+                                <div class="answer">
+                                    <div class="headBox">A</div>
+                                    <div class="content">
+No, it will not impact your credit score.
+<br/>銝?摰??蔣?蹂??縑鞎貉???
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="question">
+                                    <div class="headBox">Q</div>
+                                    <div class="content">
+When I find an issue in my credit data and want to amend it, what should I do?
+<br/>憒???曆縑鞎貉???曉?憿蒂?喃耨甇??閰脫獐颲佗?
+                                    </div>
+                                    <div class="more" status="hide"></div>
+                                </div>
+                                <div class="answer">
+                                    <div class="headBox">A</div>
+                                    <div class="content">
+You should contact TransUnion Limited. For more information, please refer to TransUnion website: <span onclick="openNewTab('https://www.transunion.hk/assistance/faq#articleSection2');">https://www.transunion.hk/assistance/faq#articleSection2</span>
+<br/>雿隞亥蝯∠?航?閮???詻擃縑?荔?隢???舐雯蝡? <span onclick="openNewTab('https://www.transunion.hk/zh/assistance/faq#articleSection2');">https://www.transunion.hk/zh/assistance/faq#articleSection2</span>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="question">
+                                    <div class="headBox">Q</div>
+                                    <div class="content">
+Is the in-app financial advice a pre-approved offer? 
+<br/>?蝔?鋆?鞎∪?撱箄降?臬歇?脣?甇亙祟?寧?蝯???
+                                    </div>
+                                    <div class="more" status="hide"></div>
+                                </div>
+                                <div class="answer">
+                                    <div class="headBox">A</div>
+                                    <div class="content">
+Any calculation results or values in the application are for illustration purposes only and may not include all applicable charges. The actual interest saving, if any, and monthly repayment amount may vary. The calculation result is for reference only.  
+<br/>?蝔?銝剔?閮?蝯???澆?靘????航?芸??祆???函??嗉祥?祕????臬?瘥??狡憿?憒?嚗??航霈???蝞???靘???
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="question">
+                                    <div class="headBox">Q</div>
+                                    <div class="content">
+What information will be collected in order to use Credit Check? 
+<br/>雿輻Credit Check?閬?靘鈭縑?荔?
+
+                                    </div>
+                                    <div class="more" status="hide"></div>
+                                </div>
+                                <div class="answer">
+                                    <div class="headBox">A</div>
+                                    <div class="content">
+In order to use the Credit Check App, we will require you to register an account. Upon registration, we will ask you to provide certain personal details. You do not have to provide your personal data to us, but if you do not provide certain personal data, you will not be able to use the Credit Check App, or you will not be able to use certain services. The personal data we collect through registration include: name, email address, telephone number, date of birth, mobile number, HKID number, declaration of monthly income. 
+<br/>In order to enable you to use the Credit Check App's features and services, you consent to our collection of personal data about you from TransUnion Limited ("TransUnion"), or any other credit reference agency. The data we may collect include:
+<br/>&nbsp;&nbsp;&nbsp;i. your credit score and credit report
+<br/>&nbsp;&nbsp;&nbsp;ii. information about your current credit cards, loans, bank accounts and other assets and liabilities
+<br/>&nbsp;&nbsp;&nbsp;iii. information about your current credit limit
+<br/>?箔蝙????臭蝙?每redit Check?蝔?嚗???瘙銝閮????閮???嚗???閬???????亙僕?犖鞈??銝蒂??????靘銝??犖鞈?嚗?憒銝??????犖鞈?嚗銝?銝雿輻Credit Check?蝔????賭蝙?冽?鈭??????嗅?餉???園??犖鞈??嚗????駁?啣?嚗閰梯?蝣潘??箇??交?嚗??閰梯?蝣潘?擐葛頨思遢霅?蝣潘?瘥??交?脫???
+<br/>?箔蝙????舫?每redit Check?蝔????賢???嚗銝??????啗???砍嚗?胯??遙雿隞縑鞎貉???瑽???潮銝??犖鞈?????賣???犖鞈??嚗?
+<br/>&nbsp;&nbsp;&nbsp;i. ????縑鞎貉???靽∟硫?勗?
+<br/>&nbsp;&nbsp;&nbsp;ii. ??????暹?靽∠?～硫甈整?銵????嗡?鞈???萇?鞈?
+<br/>&nbsp;&nbsp;&nbsp;iii. ??????暹?靽∟硫??????
+
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="question">
+                                    <div class="headBox">Q</div>
+                                    <div class="content">
+Who will have access to the collected information?
+<br/>隤唳?甈???銝虫蝙?刻◤?園??縑?荔?
+
+                                    </div>
+                                    <div class="more" status="hide"></div>
+                                </div>
+                                <div class="answer">
+                                    <div class="headBox">A</div>
+                                    <div class="content">
+<br/>Your personal data will be kept confidential but Mtel Limited intends to provide your personal data to 
+<br/>&nbsp;&nbsp;&nbsp;??TransUnion (or any other credit reference agency), with whom we may share the following data held by Mtel Limited in order to obtain your credit data: (i) full name; (ii) contact information; (iii) date of birth; (iv) Hong Kong Identity Card Number; (v) Mobile Number and (vi) declared monthly income;
+<br/>&nbsp;&nbsp;&nbsp;??Citibank (Hong Kong) Limited (Collaborator of Mtel Limited) so that they may send you direct marketing, but we cannot do so without your consent (which includes an indication of no objection) for that purpose. The personal data that may be provided to Citibank (Hong Kong) Limited includes your name, email address, phone number, year of birth and other contact details held by Mtel Limited from time to time. 
+<br/><br/>Mtel Limited ???嗅?敺????鈭犖????撖???雿撠銝??犖鞈???鈭?
+<br/>&nbsp;&nbsp;&nbsp;???啗嚗?隞颱??嗡?靽∟硫鞈?璈?嚗??箏?敺銝?靽∟硫鞈?嚗???賣???澈Mtel Limited?????犖鞈?嚗?i)摰憪?嚗?ii)?舐窗鞈?嚗?iii)?箇??交?嚗?iv)擐葛頨思遢霅?蝣潘?(v)???餉店?Ⅳ嚗?(vi)?脫?????荔?
+<br/>&nbsp;&nbsp;&nbsp;???望??銵?擐葛)???砍嚗?閰脣?詨?銝??瑕誨???嗉??冽?脣??????嚗??砌??箔????”蝷綽??????臬停甇斤?脰?銝膩銵???賣????銵?擐葛)???砍???犖鞈??Mtel Limited銝????銝?憪???萄??閰梯?蝣潦?僑隞賢??嗡??舐窗鞈???
+
+
+                                    </div>
+                                </div>
+                            </li>
+                    		<li>
+                    			<div class="question">
+                    				<div class="headBox">Q</div>
+                    				<div class="content">
+What if I want to opt-out from Citibank (Hong Kong) Limited? direct marketing?
+<br/>憒????喳??嗅?望??銵?擐葛)???砍??亦??瘀?
+
+                    				</div>
+                    				<div class="more" status="hide"></div>
+                    			</div>
+                    			<div class="answer">
+                    				<div class="headBox">A</div>
+                    				<div class="content">
+If you would like Citibank (Hong Kong) Limited to cease using your personal data in direct marketing, you can contact: Data Protection Officer, Citibank (Hong Kong) Limited address: Citi Tower, One Bay East, 83 Hoi Bun Road, Kwun Tong, Kowloon, Hong Kong  or hk.crcheck.service@citi.com (Please specify Credit Check app in the subject). This opt-out only applies to direct marketing activities related to Credit Check app, does not apply to other Citibank products or services.
+<br/>憒銝????銵?擐葛)???砍?迫雿輻????犖鞈?雿?瑞??????航蝯∴??望??銵?擐葛)???砍?犖鞈?靽風銝颱遙?啣?: 擐葛銋?閫憛絲瞈梢?83??之璅?hk.crcheck.service@citi.com嚗??券隞嗡?閮餅?Credit Check?蝔?嚗府??隢??芷?冽Credit Check?蝔??賊???亦??瑟暑??銝?冽?望??銵隞??????
+
+
+                    				</div>
+                    			</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </a>
+                <a name="privacy">
+                    <div class="moreInfoPart privacy">
+                        <div class="title">
+                            Privacy Policy relating to the Personal Data (Privacy) Ordinance (the "Ordinance")
+                            <br/>??犖鞈? ( 蝘 ) 璇? ( ???望?靘?) 銋??望蝑?撘?
+                        </div>
+                    	<div class="container"></div>
+                    </div>
+                </a>
+                <a name="tnc">
+                    <div class="moreInfoPart tnc">
+                        <div class="title">
+                            Terms &amp; Conditions
+                            <br/>璇狡?敦??
+                        </div>
+                    	<div class="container"></div>
+                    </div>
+                </a>
+            </section>
+        </div>
+        <footer>
+            <div class="iconDiv">
+                <a href="https://www.facebook.com/MTelLimited" target="_blank">
+                    <div class="icon i1"></div>
+                </a>
+                <a href="https://www.linkedin.com/company/mtel-limited" target="_blank">
+                    <div class="icon i2"></div>
+                </a>
+                <a href="https://www.youtube.com/channel/UCYQhfzcGZEcFdGgVk0wwcXQ" target="_blank">
+                    <div class="icon i3"></div>
+                </a>
+                <a href="http://www.mtellab.com/" target="_blank">
+                    <div class="icon i4"></div>
+                </a>
+            </div>
+            <div class="copyright"></div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="./../../vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./../../vendor/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="./../../scripts/worksItem.js"></script>
+</body>
+
+</html>

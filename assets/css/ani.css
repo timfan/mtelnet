@@ -1,0 +1,712 @@
+@-webkit-keyframes overlay1Transit{
+	0% {top:200%;}
+	100% {top:0%;}
+}
+@-webkit-keyframes overlay2Transit{
+	0% {top:200%;}
+	100% {top:0%;}
+}
+
+@keyframes overlay1Transit{
+	0% {top:200%;}
+	100% {top:0%;}
+}
+@keyframes overlay2Transit{
+	0% {top:200%;}
+	100% {top:0%;}
+}
+
+@keyframes loading_top_ani{
+	0%   { width:87px; }
+	50%   { width:87px; }
+	100%   { width:0px; }
+}
+
+@keyframes loading_top_inside_ani{
+	0%   { width:0px; }
+	50%   { width:87px; }
+	100%   { width:87px; }
+}
+
+@keyframes loading_bottom_ani{
+	0%   { width:87px; }
+	50%   { width:87px; }
+	100%   { width:0px; }
+}
+
+@keyframes loading_bottom_inside_ani{
+	0%   { width:0px; }
+	50%   { width:87px; }
+	100%   { width:87px; }
+}
+
+@-moz-keyframes loading_top_ani{
+	0%   { width:87px; }
+	50%   { width:87px; }
+	100%   { width:0px; }
+}
+
+@-moz-keyframes loading_top_inside_ani{
+	0%   { width:0px; }
+	50%   { width:87px; }
+	100%   { width:87px; }
+}
+
+@-moz-keyframes loading_bottom_ani{
+	0%   { width:87px; }
+	50%   { width:87px; }
+	100%   { width:0px; }
+}
+
+@-moz-keyframes loading_bottom_inside_ani{
+	0%   { width:0px; }
+	50%   { width:87px; }
+	100%   { width:87px; }
+}
+
+
+@-webkit-keyframes loading_top_ani{
+	0%   { width:87px; }
+	50%   { width:87px; }
+	100%   { width:0px; }
+}
+
+@-webkit-keyframes loading_top_inside_ani{
+	0%   { width:0px; }
+	50%   { width:87px; }
+	100%   { width:87px; }
+}
+
+@-webkit-keyframes loading_bottom_ani{
+	0%   { width:87px; }
+	50%   { width:87px; }
+	100%   { width:0px; }
+}
+
+@-webkit-keyframes loading_bottom_inside_ani{
+	0%   { width:0px; }
+	50%   { width:87px; }
+	100%   { width:87px; }
+}
+
+
+@-webkit-keyframes widthIncrease{
+	0% {width:0px;}	
+	100% {width:85px;}
+}
+@-keyframes widthIncrease{
+	0% {width:0px;}	
+	100% {width:85px;}
+}
+
+@-webkit-keyframes fadeIn{
+	0% {opacity:0.0;}
+	100% {opacity:1.0;}
+}
+
+@keyframes fadeIn{
+	0% {opacity:0.0;}
+	100% {opacity:1.0;}
+}
+@-webkit-keyframes fadeOut{
+	0% {opacity:1.0;}
+	100% {opacity:0.0;}
+}
+
+@keyframes fadeOut{
+	0% {opacity:1.0;}
+	100% {opacity:0.0;}
+}
+
+@keyframes zoomInRotate{
+	0% {
+		transform-origin:50% 50%; 
+		transform: rotate(-360deg );
+		opacity:0.0;	
+		background-size:0px;	
+	}
+	100% {
+		transform-origin:50% 50%; 
+		transform: rotate(0deg );
+		opacity:1;
+		background-size:30px;	
+	}
+}
+@-webkit-keyframes zoomInRotate{
+	0% {
+		-webkit-transform-origin:50% 50%; 
+		-webkit-transform: rotate(-360deg );
+		opacity:0.0;	
+		background-size:0px;	
+	}
+	100% {
+		-webkit-transform-origin:50% 50%; 
+		-webkit-transform: rotate(0deg );
+		opacity:1;
+		background-size:30px;	
+	}
+}
+@keyframes zoomInRotate2{
+	0% {
+		transform-origin:50% 50%; 
+		transform: rotate(-360deg );
+		opacity:0;
+		background-size:0px;	
+	}
+	100% {
+		transform-origin:50% 50%; 
+		transform: rotate(0deg );
+		opacity:1;
+		background-size:80px;	
+	}
+}
+@-webkit-keyframes zoomInRotate2{
+	0% {
+		-webkit-transform-origin:50% 50%; 
+		-webkit-transform: rotate(-360deg );
+		opacity:0;
+		background-size:0px;	
+	}
+	100% {
+		-webkit-transform-origin:50% 50%; 
+		-webkit-transform: rotate(0deg );
+		opacity:1;
+		background-size:80px;	
+	}
+}
+
+@keyframes zoomOutRotate{
+	0% {
+		transform-origin:50% 50%; 
+		transform: rotate(0deg );
+		opacity:1.0;	
+		background-size:30px;	
+	}
+	100% {
+		transform-origin:50% 50%; 
+		transform: rotate(-360deg );
+		opacity:0;
+		background-size:0px;	
+	}
+}
+@-webkit-keyframes zoomOutRotate{
+	0% {
+		-webkit-transform-origin:50% 50%; 
+		-webkit-transform: rotate(0deg );
+		opacity:1.0;	
+		background-size:30px;	
+	}
+	100% {
+		-webkit-transform-origin:50% 50%; 
+		-webkit-transform: rotate(-360deg );
+		opacity:0;
+		background-size:0px;	
+	}
+}
+@keyframes zoomOutRotate2{
+	0% {
+		transform-origin:50% 50%; 
+		transform: rotate(0deg );
+		opacity:1.0;	
+		background-size:30px;	
+	}
+	100% {
+		transform-origin:50% 50%; 
+		transform: rotate(-360deg );
+		opacity:0;
+		background-size:0px;	
+	}
+}
+@-webkit-keyframes zoomOutRotate2{
+	0% {
+		-webkit-transform-origin:50% 50%; 
+		-webkit-transform: rotate(0deg );
+		opacity:1.0;	
+		background-size:30px;	
+	}
+	100% {
+		-webkit-transform-origin:50% 50%; 
+		-webkit-transform: rotate(-360deg );
+		opacity:0;
+		background-size:0px;	
+	}
+}
+@-webkit-keyframes slideFromright{
+	0% {right:-150px;opacity:0.0;}
+	100% {right:0px;opacity:1.0;}
+}
+
+@keyframes slideFromright{
+	0% {right:-150px;opacity:0.0;}
+	100% {right:0px;opacity:1.0;}
+}
+
+@-webkit-keyframes slideFromleft{
+	0% {left:-20px;opacity:0.0;}
+	75% {left:-20px;opacity:0.0;}
+	100% {left:0px;opacity:1.0;}
+}
+
+@keyframes slideFromleft{
+	0% {left:-20px;opacity:0.0;}
+	75% {left:-20px;opacity:0.0;}
+	100% {left:0px;opacity:1.0;}
+}
+
+@-webkit-keyframes slideFromleft3{
+	0% {left:-150px;opacity:0.0;}
+	100% {left:0px;opacity:1.0;}
+}
+@keyframes slideFromleft3{
+	0% {left:-150px;opacity:0.0;}
+	100% {left:0px;opacity:1.0;}
+}
+@-webkit-keyframes slideFromleft4{
+	0% {margin-left:-50px;opacity:0.0;}
+	100% {margin-left:0px;opacity:1.0;}
+}
+@keyframes slideFromleft4{
+	0% {margin-left:-50px;opacity:0.0;}
+	100% {margin-left:0px;opacity:1.0;}
+}
+@-webkit-keyframes slideFromtop{
+	0% {top:-20px;opacity:0.0;}
+	75% {top:-20px;opacity:0.0;}
+	100% {top:0px;opacity:1.0;}
+}
+@keyframes slideFromtop{
+	0% {top:-20px;opacity:0.0;}
+	75% {top:-20px;opacity:0.0;}
+	100% {top:0px;opacity:1.0;}
+}
+
+@-webkit-keyframes rulerAni1{	
+	0% {background-position-x: -300px;}
+	25% {background-position-x: -320px;}
+	50% {background-position-x: -300px;}
+	75% {background-position-x: -280px;}
+	100% {background-position-x: -300px;}
+}
+@keyframes rulerAni1{
+	0% {background-position-x: -300px;}
+	25% {background-position-x: -320px;}
+	50% {background-position-x: -300px;}
+	75% {background-position-x: -280px;}
+	100% {background-position-x: -300px;}
+}
+
+@-webkit-keyframes clipAni{	
+	0% {background-position-y: 25px;}
+	25% {background-position-y: 0px;}
+	50% {background-position-y: 25px;}
+	75% {background-position-y: 50px;}
+	100% {background-position-y: 25px;}
+}
+@keyframes clipAni{
+	0% {background-position-y: 25px;}
+	25% {background-position-y: 0px;}
+	50% {background-position-y: 25px;}
+	75% {background-position-y: 50px;}
+	100% {background-position-y: 25px;}
+}
+@-webkit-keyframes meterAni1{	
+	0% {background-position-y: 154px;}
+	50% {background-position-y: 120px;}
+	100% {background-position-y: 154px;}
+}
+@keyframes meterAni1{
+	0% {background-position-y: 154px;}
+	50% {background-position-y: 120px;}
+	100% {background-position-y: 154px;}
+}
+
+@-webkit-keyframes meterAni2{	
+	0% {background-position-y: 160px;}
+	50% {background-position-y: 125px;}
+	100% {background-position-y: 160px;}
+}
+@keyframes meterAni2{
+	0% {background-position-y: 160px;}
+	50% {background-position-y: 125px;}
+	100% {background-position-y: 160px;}
+}
+@-webkit-keyframes meterAni3{	
+	0% {background-position-y: 60px;}
+	50% {background-position-y: 25px;}
+	100% {background-position-y: 60px;}
+}
+@keyframes meterAni3{
+	0% {background-position-y: 60px;}
+	50% {background-position-y: 25px;}
+	100% {background-position-y: 60px;}
+}
+
+@-webkit-keyframes slideFromtop2{
+	0% {top:170px;opacity:0.0;}
+	100% {top:180px;opacity:1.0;}
+}
+@keyframes slideFromtop2{
+	0% {top:170px;opacity:0.0;}
+	100% {top:180px;opacity:1.0;}
+}
+@-webkit-keyframes slideFromtop3{
+	0% {top:-20px;opacity:0.0;}
+	100% {top:0px;opacity:1.0;}
+}
+@keyframes slideFromtop3{
+	0% {top:-20px;opacity:0.0;}
+	100% {top:0px;opacity:1.0;}
+}
+@-webkit-keyframes slideFromtop4{
+	0% {margin-top:-20px;opacity:0.0;}
+	100% {margin-top:0px;opacity:1.0;}
+}
+@keyframes slideFromtop4{
+	0% {margin-top:-20px;opacity:0.0;}
+	100% {margin-top:0px;opacity:1.0;}
+}
+@-webkit-keyframes slideFrombottom{
+	0% {top:100px;opacity:0.0;}
+	65% {top:20px;opacity:0.65;}
+	100% {top:35px;opacity:1.0;}
+}
+@keyframes slideFrombottom{
+	0% {top:100px;opacity:0.0;}
+	65% {top:20px;opacity:0.65;}
+	100% {top:35px;opacity:1.0;}
+}
+
+@-webkit-keyframes rotateRight{
+	0% {-webkit-transform: rotate(-60deg);opacity:0.0;}
+	100% {-webkit-transform: rotate(-28deg);opacity:1.0;}
+}
+@keyframes rotateRight{
+	0% {transform: rotate(-60deg);opacity:0.0;}
+	100% {transform: rotate(-28deg);opacity:1.0;}
+}
+@-webkit-keyframes rotateLeft{
+	0% {-webkit-transform: rotate(60deg);opacity:0.0;}
+	100% {-webkit-transform: rotate(28deg);opacity:1.0;}
+}
+@keyframes rotateLeft{
+	0% {transform: rotate(60deg);opacity:0.0;}
+	100% {transform: rotate(28deg);opacity:1.0;}
+}
+@-webkit-keyframes rotateTopDown{
+	0% {-webkit-transform: rotate(0deg);}
+	33% {-webkit-transform: rotate(-28deg);}
+	66% {-webkit-transform: rotate(28deg);}
+	100% {-webkit-transform: rotate(0deg);}
+}
+@keyframes rotateTopDown{
+	0% {transform: rotate(0deg);}
+	33% {transform: rotate(-28deg);}
+	66% {transform: rotate(28deg);}
+	100% {transform: rotate(0deg);}
+}
+
+@-webkit-keyframes rotateMJ{
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(20deg);}
+}
+@keyframes rotateMJ{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(20deg);}
+}
+
+@-webkit-keyframes bounceLeft{
+	0% {left:-60px;opacity:0;}
+	33% {left:0px;opacity:1;}
+	66% {left:-10px;opacity:1;}
+	100% {left:0px;opacity:1;}
+}
+@keyframes bounceLeft{
+	0% {left:-60px;opacity:0;}
+	33% {left:0px;opacity:1;}
+	66% {left:-10px;opacity:1;}
+	100% {left:0px;opacity:1;}
+}
+
+@-webkit-keyframes bounceRight{
+	0% {left:220px;opacity:0;}
+	33% {left:160px;opacity:1;}
+	66% {left:170px;opacity:1;}
+	100% {left:160px;opacity:1;}
+}
+@keyframes bounceRight{
+	0% {left:220px;opacity:0;}
+	33% {left:160px;opacity:1;}
+	66% {left:170px;opacity:1;}
+	100% {left:160px;opacity:1;}
+}
+
+@-webkit-keyframes slideFrombottom2{
+	0% {top:50px;left:290px;opacity:0.0;}
+	100% {top:0px;left:220px;opacity:1.0;}
+}
+
+@keyframes slideFrombottom2{
+	0% {top:50px;left:290px;opacity:0.0;}
+	100% {top:0px;left:220px;opacity:1.0;}
+}
+
+@keyframes slideFrombottom3{
+	0%{background-position:100% 320px;}
+	100%{background-position:50% 50px;}
+}
+@-webkit-keyframes slideFrombottom3{
+	0%{background-position:100% 320px;}
+	100%{background-position:50% 50px;}
+}
+@keyframes slideFrombottom4{
+	0%{background-position-y:0px;opacity:0;}
+	100%{background-position-y:-100px;opacity:1;}
+}
+@-webkit-keyframes slideFrombottom4{
+	0%{background-position-y:0px;opacity:0;}
+	100%{background-position-y:-100px;opacity:1;}
+}
+@keyframes slideFrombottom5{
+	0%{margin-top: 35px;;opacity:0;}
+	100%{margin-top: 0px;;opacity:1;}
+}
+@-webkit-keyframes slideFrombottom5{
+	0%{margin-top: 35px;;opacity:0;}
+	100%{margin-top: 0px;;opacity:1;}
+}
+@keyframes slideFrombottom6{
+	0%{background-position:320px 320px;opacity:0.0;}
+	100%{background-position:0px 0px;opacity:1.0;}
+}
+@-webkit-keyframes slideFrombottom6{
+	0%{background-position:320px 320px;opacity:0.0;}
+	100%{background-position:0px 00px;opacity:1.0;}
+}
+@keyframes slideFrombottom7{
+	0%{top:100px;opacity:0.0;}
+	100%{top:45px;opacity:1.0;}
+}
+@-webkit-keyframes slideFrombottom7{
+	0%{top:100px;opacity:0.0;}
+	100%{top:45px;opacity:1.0;}
+}
+@keyframes slideFrombottom8{
+	0%{margin-top:45px;}
+	100%{margin-top:-45px;}
+}
+@-webkit-keyframes slideFrombottom8{
+	0%{margin-top:45px;}
+	100%{margin-top:-45px;}
+}
+@-webkit-keyframes slideFromleft2{
+	0% {left:35px;opacity:0.0;}
+	100% {left:55px;opacity:1.0;}
+}
+
+@keyframes slideFromleft2{
+	0% {left:35px;opacity:0.0;}
+	100% {left:55px;opacity:1.0;}
+}
+
+@-webkit-keyframes drinkSoup{
+	0% {width:105px;height:105px;top: 72px;left: 113px;opacity:0.8;}
+	100% {width:0px;height:0px;top: 118px;left: 159px;opacity:0.0;}
+}
+
+@keyframes drinkSoup{
+	0% {width:105px;height:105px;top: 72px;left: 113px;opacity:0.8;}
+	100% {width:0px;height:0px;top: 118px;left: 159px;opacity:0.0;}
+}
+@-webkit-keyframes carAni{
+	0% {margin-top:10px;}
+	100% {margin-top:0px;}
+}
+
+@keyframes carAni{
+	0% {margin-top:10px;}
+	100% {margin-top:0px;}
+}
+
+@-webkit-keyframes carWheelAni{
+	0% {margin-top:50px;}
+	100% {margin-top:0px;opacity:1;}
+}
+
+@keyframes carWheelAni{
+	0% {margin-top:50px;opacity:0;}
+	100% {margin-top:0px;opacity:1;}
+}
+
+@-webkit-keyframes lightBlubFlash{
+	from {background-position: 0px;}
+    to {background-position: -1080px;}
+}
+
+@keyframes lightBlubFlash{
+	from {background-position: 0px;}
+    to {background-position: -1080px;}
+	
+}
+
+
+@keyframes perfume2Ani{
+	0% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top_a.png') no-repeat;background-size:87px;	}
+	16% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top_b.png') no-repeat;background-size:87px;	}
+	32% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top_c.png') no-repeat;background-size:87px;	}
+	48% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top_d.png') no-repeat;background-size:87px;	}
+	64% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top_e.png') no-repeat;background-size:87px;	}
+	80% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top_f.png') no-repeat;background-size:87px;	}
+	100% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top.png') no-repeat;background-size:87px;	}
+}
+
+@-webkit-keyframes perfume2Ani{
+	0% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top_a.png') no-repeat;background-size:87px;	}
+	16% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top_b.png') no-repeat;background-size:87px;	}
+	32% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top_c.png') no-repeat;background-size:87px;	}
+	48% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top_d.png') no-repeat;background-size:87px;	}
+	64% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top_e.png') no-repeat;background-size:87px;	}
+	80% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top_f.png') no-repeat;background-size:87px;	}
+	100% {background:url('../images/Questions/question3_assets/04/img_perfume_bottle_top.png') no-repeat;background-size:87px;	}
+}
+
+@keyframes spermAnimation{
+	0% {background:url('../images/Questions/question_badge1_assets/05/bubble_item_a.png') no-repeat;background-size:224px;	}
+	50% {background:url('../images/Questions/question_badge1_assets/05/bubble_item_b.png') no-repeat;background-size:224px;	}
+	100% {background:url('../images/Questions/question_badge1_assets/05/bubble_item_c.png') no-repeat;background-size:224px;	}
+}
+
+@-webkit-keyframes spermAnimation{
+	0% {background:url('../images/Questions/question_badge1_assets/05/bubble_item_a.png') no-repeat;background-size:224px;	}
+	50% {background:url('../images/Questions/question_badge1_assets/05/bubble_item_b.png') no-repeat;background-size:224px;	}
+	100% {background:url('../images/Questions/question_badge1_assets/05/bubble_item_c.png') no-repeat;background-size:224px;	}
+}
+@keyframes eyeAnimation{
+	0% {background:url('../images/Questions/question2_assets/02/icon_eye_open.png') 50% 50% no-repeat;background-size:100%;	}
+	50% {background:url('../images/Questions/question2_assets/02/icon_eye_close.png') 50% 50% no-repeat;background-size:100%;	}	
+	100% {background:url('../images/Questions/question2_assets/02/icon_eye_open.png') 50% 50% no-repeat;background-size:100%;	}	
+}
+
+@-webkit-keyframes eyeAnimation{
+	0% {background:url('../images/Questions/question2_assets/02/icon_eye_open.png') 50% 50% no-repeat;background-size:100%;	}
+	50% {background:url('../images/Questions/question2_assets/02/icon_eye_close.png') 50% 50% no-repeat;background-size:100%;	}	
+	100% {background:url('../images/Questions/question2_assets/02/icon_eye_open.png') 50% 50% no-repeat;background-size:100%;	}	
+}
+@keyframes runAnimation{
+	0% {background:url('../images/Questions/question2_assets/02/icon_people_a.png') 50% 50% no-repeat;background-size:100%;	}
+	9% {background:url('../images/Questions/question2_assets/02/icon_people_b.png') 50% 50% no-repeat;background-size:100%;	}
+	18% {background:url('../images/Questions/question2_assets/02/icon_people_c.png') 50% 50% no-repeat;background-size:100%;	}
+	27% {background:url('../images/Questions/question2_assets/02/icon_people_d.png') 50% 50% no-repeat;background-size:100%;	}
+	36% {background:url('../images/Questions/question2_assets/02/icon_people_e.png') 50% 50% no-repeat;background-size:100%;	}
+	45% {background:url('../images/Questions/question2_assets/02/icon_people_f.png') 50% 50% no-repeat;background-size:100%;	}
+	54% {background:url('../images/Questions/question2_assets/02/icon_people_g.png') 50% 50% no-repeat;background-size:100%;	}
+	63% {background:url('../images/Questions/question2_assets/02/icon_people_h.png') 50% 50% no-repeat;background-size:100%;	}
+	72% {background:url('../images/Questions/question2_assets/02/icon_people_i.png') 50% 50% no-repeat;background-size:100%;	}
+	81% {background:url('../images/Questions/question2_assets/02/icon_people_j.png') 50% 50% no-repeat;background-size:100%;	}
+	90% {background:url('../images/Questions/question2_assets/02/icon_people_k.png') 50% 50% no-repeat;background-size:100%;	}
+	100% {background:url('../images/Questions/question2_assets/02/icon_people_l.png') 50% 50% no-repeat;background-size:100%;	}
+}
+@-webkit-keyframes runAnimation{
+	0% {background:url('../images/Questions/question2_assets/02/icon_people_a.png') 50% 50% no-repeat;background-size:100%;	}
+	9% {background:url('../images/Questions/question2_assets/02/icon_people_b.png') 50% 50% no-repeat;background-size:100%;	}
+	18% {background:url('../images/Questions/question2_assets/02/icon_people_c.png') 50% 50% no-repeat;background-size:100%;	}
+	27% {background:url('../images/Questions/question2_assets/02/icon_people_d.png') 50% 50% no-repeat;background-size:100%;	}
+	36% {background:url('../images/Questions/question2_assets/02/icon_people_e.png') 50% 50% no-repeat;background-size:100%;	}
+	45% {background:url('../images/Questions/question2_assets/02/icon_people_f.png') 50% 50% no-repeat;background-size:100%;	}
+	54% {background:url('../images/Questions/question2_assets/02/icon_people_g.png') 50% 50% no-repeat;background-size:100%;	}
+	63% {background:url('../images/Questions/question2_assets/02/icon_people_h.png') 50% 50% no-repeat;background-size:100%;	}
+	72% {background:url('../images/Questions/question2_assets/02/icon_people_i.png') 50% 50% no-repeat;background-size:100%;	}
+	81% {background:url('../images/Questions/question2_assets/02/icon_people_j.png') 50% 50% no-repeat;background-size:100%;	}
+	90% {background:url('../images/Questions/question2_assets/02/icon_people_k.png') 50% 50% no-repeat;background-size:100%;	}
+	100% {background:url('../images/Questions/question2_assets/02/icon_people_l.png') 50% 50% no-repeat;background-size:100%;	}
+}
+@-webkit-keyframes smokeAnimation{
+	0% {background:url('../images/Questions/question2_assets/02/icon_smoke_a.png') 50% 50% no-repeat;background-size:100%;	}
+	7% {background:url('../images/Questions/question2_assets/02/icon_smoke_b.png') 50% 50% no-repeat;background-size:100%;	}
+	14% {background:url('../images/Questions/question2_assets/02/icon_smoke_c.png') 50% 50% no-repeat;background-size:100%;	}
+	21% {background:url('../images/Questions/question2_assets/02/icon_smoke_d.png') 50% 50% no-repeat;background-size:100%;	}
+	28% {background:url('../images/Questions/question2_assets/02/icon_smoke_e.png') 50% 50% no-repeat;background-size:100%;	}
+	35% {background:url('../images/Questions/question2_assets/02/icon_smoke_f.png') 50% 50% no-repeat;background-size:100%;	}
+	42% {background:url('../images/Questions/question2_assets/02/icon_smoke_g.png') 50% 50% no-repeat;background-size:100%;	}
+	49% {background:url('../images/Questions/question2_assets/02/icon_smoke_h.png') 50% 50% no-repeat;background-size:100%;	}
+	56% {background:url('../images/Questions/question2_assets/02/icon_smoke_i.png') 50% 50% no-repeat;background-size:100%;	}
+	63% {background:url('../images/Questions/question2_assets/02/icon_smoke_j.png') 50% 50% no-repeat;background-size:100%;	}
+	70% {background:url('../images/Questions/question2_assets/02/icon_smoke_k.png') 50% 50% no-repeat;background-size:100%;	}
+	77% {background:url('../images/Questions/question2_assets/02/icon_smoke_l.png') 50% 50% no-repeat;background-size:100%;	}
+	84% {background:url('../images/Questions/question2_assets/02/icon_smoke_m.png') 50% 50% no-repeat;background-size:100%;	}
+	91% {background:url('../images/Questions/question2_assets/02/icon_smoke_n.png') 50% 50% no-repeat;background-size:100%;	}
+	98% {background:url('../images/Questions/question2_assets/02/icon_smoke_o.png') 50% 50% no-repeat;background-size:100%;	}
+	100% {background:url('../images/Questions/question2_assets/02/icon_smoke_p.png') 50% 50% no-repeat;background-size:100%;	}
+}
+
+@keyframes spermSwim{
+	0% {background:url('../images/Questions/question4animate_assets/icon_c_frame_1.png') 50% 50% no-repeat;background-size:45px;	}
+	25% {background:url('../images/Questions/question4animate_assets/icon_c_frame_2.png') 50% 50% no-repeat;background-size:45px;	}
+	50% {background:url('../images/Questions/question4animate_assets/icon_c_frame_3.png') 50% 50% no-repeat;background-size:45px;	}
+	75% {background:url('../images/Questions/question4animate_assets/icon_c_frame_4.png') 50% 50% no-repeat;background-size:45px;	}
+	100% {background:url('../images/Questions/question4animate_assets/icon_c_frame_5.png') 50% 50% no-repeat;background-size:45px;	}
+}
+@-webkit-keyframes spermSwim{
+	0% {background:url('../images/Questions/question4animate_assets/icon_c_frame_1.png') 50% 50% no-repeat;background-size:45px;	}
+	25% {background:url('../images/Questions/question4animate_assets/icon_c_frame_2.png') 50% 50% no-repeat;background-size:45px;	}
+	50% {background:url('../images/Questions/question4animate_assets/icon_c_frame_3.png') 50% 50% no-repeat;background-size:45px;	}
+	75% {background:url('../images/Questions/question4animate_assets/icon_c_frame_4.png') 50% 50% no-repeat;background-size:45px;	}
+	100% {background:url('../images/Questions/question4animate_assets/icon_c_frame_5.png') 50% 50% no-repeat;background-size:45px;	}
+}
+@keyframes zoomInOut{
+	0% {background: url('../images/Questions/question_badge1_assets/07/icon_b.png') 50% 50% no-repeat;background-size:78px;}	
+	33% {background: url('../images/Questions/question_badge1_assets/07/icon_b.png') 50% 50% no-repeat;background-size:90px;}	
+	66% {background: url('../images/Questions/question_badge1_assets/07/icon_b.png') 50% 50% no-repeat;background-size:78px;}	
+	100% {background: url('../images/Questions/question_badge1_assets/07/icon_b.png') 50% 50% no-repeat;background-size:66px;}	
+}
+@-webkit-keyframes zoomInOut{
+	0% {background: url('../images/Questions/question_badge1_assets/07/icon_b.png') 50% 50% no-repeat;background-size:78px;}	
+	33% {background: url('../images/Questions/question_badge1_assets/07/icon_b.png') 50% 50% no-repeat;background-size:90px;}	
+	66% {background: url('../images/Questions/question_badge1_assets/07/icon_b.png') 50% 50% no-repeat;background-size:78px;}	
+	100% {background: url('../images/Questions/question_badge1_assets/07/icon_b.png') 50% 50% no-repeat;background-size:66px;}	
+}
+@keyframes fly{
+	0% {background:url('../images/Questions/question_badge1_assets/07/icon_a_fly_a.png') 50% 50% no-repeat;background-size:43px;	}
+	50% {background:url('../images/Questions/question_badge1_assets/07/icon_a_fly_b.png') 50% 50% no-repeat;background-size:43px;	}
+	100% {background:url('../images/Questions/question_badge1_assets/07/icon_a_fly_c.png') 50% 50% no-repeat;background-size:43px;	}	
+}
+@-webkit-keyframes fly{
+	0% {background:url('../images/Questions/question_badge1_assets/07/icon_a_fly_a.png') 50% 50% no-repeat;background-size:43px;	}
+	50% {background:url('../images/Questions/question_badge1_assets/07/icon_a_fly_b.png') 50% 50% no-repeat;background-size:43px;	}
+	100% {background:url('../images/Questions/question_badge1_assets/07/icon_a_fly_c.png') 50% 50% no-repeat;background-size:43px;	}
+}
+@keyframes flyDie{
+	0% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_a.png') 50% 50% no-repeat;background-size:43px;	}
+	5% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_b.png') 50% 50% no-repeat;background-size:43px;	}	
+	10% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_a.png') 50% 50% no-repeat;background-size:43px;	}
+	25% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_b.png') 50% 50% no-repeat;background-size:43px;	}	
+	40% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_a.png') 50% 50% no-repeat;background-size:43px;	}
+	60% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_b.png') 50% 50% no-repeat;background-size:43px;	}	
+	80% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_a.png') 50% 50% no-repeat;background-size:43px;	}
+	100% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_b.png') 50% 50% no-repeat;background-size:43px;	}	
+}
+@-webkit-keyframes flyDie{
+	0% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_a.png') 50% 50% no-repeat;background-size:43px;	}
+	5% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_b.png') 50% 50% no-repeat;background-size:43px;	}	
+	10% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_a.png') 50% 50% no-repeat;background-size:43px;	}
+	25% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_b.png') 50% 50% no-repeat;background-size:43px;	}	
+	40% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_a.png') 50% 50% no-repeat;background-size:43px;	}
+	60% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_b.png') 50% 50% no-repeat;background-size:43px;	}	
+	80% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_a.png') 50% 50% no-repeat;background-size:43px;	}
+	100% {background:url('../images/Questions/question_badge1_assets/07/icon_a_die_b.png') 50% 50% no-repeat;background-size:43px;	}	
+}
+/* 橫向智慧手機到竪立平板電腦解析度 */
+@Media (max-width: 480px) {
+	@keyframes slideFrombottom3{
+		0%{background-position:480px 480px;}
+		100%{background-position:50px 50px;}
+	}
+	@-webkit-keyframes slideFrombottom3{
+		0%{background-position:480px 480px;}
+		100%{background-position:50px 50px;}
+	}
+}
+
+.pause{
+    animation-play-state: paused!important;
+    -webkit-animation-play-state: paused!important;
+}

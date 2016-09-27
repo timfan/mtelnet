@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<% include templates/layout.head.ejs%>
+</head>
+<body>
+<div id="cover"></div>
+<div id="index">
+	<header>
+		<% include templates/layout.header.ejs%>
+	</header>
+	<div id="mainContent">
+		<section class="section s1">
+			<div class="intro i1" style="background-image: url('images/home/section-1-background.png')" data-stellar-background-ratio="0.8">
+				<div class="textBlock">
+					<!-- <div class="title2">mobile-first. connect. inspire.</div> -->
+					<div class="title2">
+						<% 
+							var postList = contentful.posts;
+							
+							for(var i=0; i<postList.length; i++) {%>
+						   <li><%= postList[i].companyName %></li>
+						<% } %>
+					</div>
+					<div class="readMoreBtn">
+						<a href="about.html">read more</a>
+						<div class="line-top">&nbsp;</div>
+						<div class="line-right">&nbsp;</div>
+						<div class="line-bottom">&nbsp;</div>
+						<div class="line-left">&nbsp;</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section s2" style="background-image: url('images/home/section-2-background.png')" data-stellar-background-ratio="0.8">
+			<div class="textBlock">
+				<div class="title1">Our</div>
+				<div class="title2">services</div>
+				<div class="title3"><div class="miniBar">&nbsp;</div></div>
+				<div class="content3Col">
+					<div class="contentLeft">
+						<div class="title4">Consultation and strategy</div>
+						<div class="content">We combine industry insights with practical expertise to help our clients achieve their goals, by making sales through omni-channels, or gaining benefits from big data technologies.</div>
+					</div>
+					<div class="contentCenter">
+						<div class="title3"><div class="miniBar">&nbsp;</div></div>
+						<div class="title4">Design and develop</div>
+						<div class="content">We design and develop mobile, web, and social applications, campaigns, digital installations and cloud platform for leading corporations in Hong Kong and nearby regions.</div>
+					</div>
+					<div class="contentRight">
+						<div class="title3"><div class="miniBar">&nbsp;</div></div>
+						<div class="title4">Enterprise Solutions</div>
+						<div class="content">Our proprietary solutions power enterprises, encompassing internal communications, event interactions, sales presentations tools, e-learning platforms and so on.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section s3">
+			<div class="left" style="background-image: url('images/home/section-3-background-left.png')" data-stellar-background-ratio="0.8"></div>
+			<div class="right" style="background-image: url('images/home/section-3-background-right.png')" data-stellar-background-ratio="0.8"></div>
+			<div class="textBlock">
+				<div class="title1">latest</div>
+				<div class="title2">showcases</div>
+				<div class="title3"><div class="miniBar">&nbsp;</div></div>
+				<div class="content">We enjoy working with great clients and partners, for awesome projects.</div>
+				<div class="readMoreBtn" onclick="window.location.href='works.html'">
+					<a href="works.html">read more</a>
+					<div class="line-top">&nbsp;</div>
+					<div class="line-right">&nbsp;</div>
+					<div class="line-bottom">&nbsp;</div>
+					<div class="line-left">&nbsp;</div>
+				</div>
+			</div>
+		</section>
+		<section class="section s4">
+			
+				<div class="portfolio doubleCol mobileVisible" onclick="window.location.href='asset/works/hkjc-wechat-racing-channel.html';">
+					<img src="images/home/hkjc-wechat-racing-channel.png" alt=""/>
+					<div class="overlay">&nbsp;</div>
+					<div class="textBlock">
+						<div class="title1">WeChat</div>
+						<div class="title2">HKJC Wechat Racing Channel</div>
+						<div class="readMoreBtn small" onclick="window.location.href='asset/works/hkjc-wechat-racing-channel.html';">
+							<a href="asset/works/hkjc-wechat-racing-channel.html">read more</a>
+							<div class="line-top">&nbsp;</div>
+							<div class="line-right">&nbsp;</div>
+							<div class="line-bottom">&nbsp;</div>
+							<div class="line-left">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="portfolio" onclick="window.location.href='asset/works/grand-hyatt-hyattevents.html';">
+					<img src="images/home/grand-hyatt-hyattevents.png" alt=""/>
+					<div class="overlay">&nbsp;</div>
+					<div class="textBlock">
+						<div class="title1">Mobile App</div>
+						<div class="title2">Grand Hyatt Hyattevents</div>
+						<div class="readMoreBtn small" onclick="window.location.href='asset/works/grand-hyatt-hyattevents.html';">
+							<a href="asset/works/grand-hyatt-hyattevents.html">read more</a>
+							<div class="line-top">&nbsp;</div>
+							<div class="line-right">&nbsp;</div>
+							<div class="line-bottom">&nbsp;</div>
+							<div class="line-left">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="portfolio" onclick="window.location.href='asset/works/standard-chartered-digital-branch.html';">
+					<img src="images/home/standard-chartered-digital-branch.png" alt=""/>
+					<div class="overlay">&nbsp;</div>
+					<div class="textBlock">
+						<div class="title1">Digital Installation</div>
+						<div class="title2">Standard Chartered Digital Branch</div>
+						<div class="readMoreBtn small" onclick="window.location.href='asset/works/standard-chartered-digital-branch.html';">
+							<a href="asset/works/standard-chartered-digital-branch.html">read more</a>
+							<div class="line-top">&nbsp;</div>
+							<div class="line-right">&nbsp;</div>
+							<div class="line-bottom">&nbsp;</div>
+							<div class="line-left">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section class="section s6" style="background-image: url('images/home/section-6-background.png')" data-stellar-background-ratio="0.8">
+			<div class="textBlock">
+				<div class="title1">career in mtel</div>
+				<div class="title2">join us!</div>
+				<div class="title3"><div class="miniBar">&nbsp;</div></div>
+				<div class="content">We have offices in Hong Kong, Guangzhou and Taipei, and we are expanding. We are always looking for super talented designers, coders, thinkers, organisers, and obsessives.</div>								
+				<div class="readMoreBtn" onclick="window.location.href='joinus.html'">
+					<a href="joinus.html">read more</a>
+					<div class="line-top">&nbsp;</div>
+					<div class="line-right">&nbsp;</div>
+					<div class="line-bottom">&nbsp;</div>
+					<div class="line-left">&nbsp;</div>
+				</div>
+			</div>
+		</section>
+		<section class="section s7" style="background-image: url('images/home/section-7-background.png')" data-stellar-background-ratio="0.8">
+			<div class="textBlock">
+				<div class="title1">Explore Our</div>
+				<div class="title2">News</div>
+				<div class="title3"><div class="miniBar">&nbsp;</div></div>
+				<div class="newsContainer">
+					<div class="newsDiv">					
+						<div class="prevBtn"></div>						
+						<div class="nextBtn"></div>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">SEP</div>
+											<div class="day">01</div>
+										</div>
+										<div class="content">
+											<div class="title">Building a smarter City via IoT</div>
+											<div class="description">The impact of IoT on our daily life is going to be tremendous as it helps to build a better city. What is the secret to unlock the potential of IoT?</div>
+											
+											<div onclick="window.location.href='news.html#2016090100';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">AUG</div>
+											<div class="day">04</div>
+										</div>
+										<div class="content">
+											<div class="title">Smart watch comes in Braille</div>
+											<div class="description">When you hear the term ?˜Smart watch?? what do you think of? A Fitbit fitness tracker or an Apple watch? The latest smart watch has now come in Braille for visually impaired people.</div>
+											
+											<div onclick="window.location.href='news.html#2016080400';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">JUL</div>
+											<div class="day">04</div>
+										</div>
+										<div class="content">
+											<div class="title">Campbell Soup tapped into mobile ads with AI</div>
+											<div class="description">There are various ways to promote a brand, including social media, search engine, etc. Taking digital marketing further, some large brands including Unilever have started using Artificial Intelligence (AI) as interactive advertising tool to gather customer insights. </div>
+											
+											<div onclick="window.location.href='news.html#2016070400';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">JUN</div>
+											<div class="day">23</div>
+										</div>
+										<div class="content">
+											<div class="title">The future of mobile payment?</div>
+											<div class="description">No wallet and phone needed! Two men demonstrated that putting microchips in their bodies is the new way to pay. </div>
+											
+											<div onclick="window.location.href='news.html#2016062300';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">JUN</div>
+											<div class="day">16</div>
+										</div>
+										<div class="content">
+											<div class="title">Mtel supported Retail Asia Expo 2016</div>
+											<div class="description">Our three-day exhibition at Retail Asia Expo ended on a high note.</div>
+											
+											<div onclick="window.location.href='news.html#2016061600';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">JUN</div>
+											<div class="day">07</div>
+										</div>
+										<div class="content">
+											<div class="title">Bing Search launches image search on phone</div>
+											<div class="description">Facebook is predicting the end of the written word on its platform in five years??time. Apparently, all world leading technological firms are eyeing on the potential growth of image market due to its wide dissemination. Bing Search is not an exception.</div>
+											
+											<div onclick="window.location.href='news.html#2016060700';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">MAY</div>
+											<div class="day">19</div>
+										</div>
+										<div class="content">
+											<div class="title">A new wearable for female sport lovers</div>
+											<div class="description">IoT comes in various forms now. Hongkongers have been getting into sports these days, and more and more women love sports. Here comes the good news!</div>
+											
+											<div onclick="window.location.href='news.html#2016051900';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">MAY</div>
+											<div class="day">09</div>
+										</div>
+										<div class="content">
+											<div class="title">Mtel co-organizes Internet Ecosystem Week 2016</div>
+											<div class="description">The Best Practice of eCommerce is back for 2016!</div>
+											
+											<div onclick="window.location.href='news.html#2016050900';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">APR</div>
+											<div class="day">27</div>
+										</div>
+										<div class="content">
+											<div class="title">Mtel supports Retail Marketing Hong Kong 2016</div>
+											<div class="description">How exciting! We?™ve joined the marketing?™s signature industry leading event.</div>
+											
+											<div onclick="window.location.href='news.html#2016042700';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">APR</div>
+											<div class="day">22</div>
+										</div>
+										<div class="content">
+											<div class="title">Mtel wins 3 awards in MARKies Awards 2016</div>
+											<div class="description">Our apps are well recognized and become the winner of Hong Kong?™s premier creative awards.</div>
+											
+											<div onclick="window.location.href='news.html#2016042200';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">MAR</div>
+											<div class="day">11</div>
+										</div>
+										<div class="content">
+											<div class="title">Mtel partners with A.S. Watson</div>
+											<div class="description">A thriving partnership! Mtel has embarked on a long-term partnership with A.S. Watson. We will be their mobile solution partner in Asia.</div>
+											
+											<div onclick="window.location.href='news.html#2016031100';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">MAR</div>
+											<div class="day">04</div>
+										</div> 
+										<div class="content">
+											<div class="title">Boosting Marketing Campaign Effectiveness by Harnessing Seamless Internal Communication</div>
+											<div class="description">Innovation in communication is not limited to external communication and marketing campaigns. Our CTO Jeff Chau has shared his insight at the AWS Digital Innovation Event.</div>
+											
+											<div onclick="window.location.href='news.html#2016030400';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">FEB</div>
+											<div class="day">19</div>
+										</div>
+										<div class="content">
+											<div class="title">Mtel wins big in Mob-Ex Awards 2016</div>
+											<div class="description">Hard work is paid off; a time to embrace excellence! We have grabbed 12 awards!</div>
+											
+											<div onclick="window.location.href='news.html#2016021900';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">JAN</div>
+											<div class="day">25</div>
+										</div>
+										<div class="content">
+											<div class="title">Personalization - The key to long term brand success</div>
+											<div class="description">Have you ever wondered why you did not show any preferences, while advertisements at the side of the websites you visit keep showing the types of products and services you are interested in? How do they collect your likes and unlikes? It seems that marketers are seizing every single opportunity to reach their targeted customers. Credit to personalization. </div>
+											<div onclick="window.location.href='news.html#2016012500';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">JAN</div>
+											<div class="day">14</div>
+										</div>
+										<div class="content">
+											<div class="title">SCMP Game Changers Event</div>
+											<div class="description">How can big data be harnessed to deliver improved business performance, increase customer satisfaction and deliver competitive advantages? Hear what our CTO Jeff Chau says about the topic!</div>
+											<div onclick="window.location.href='news.html#2016011400';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">DEC</div>
+											<div class="day">16</div>
+										</div>
+										<div class="content">
+											<div class="title">Citi Mobile Challenge APAC</div>
+											<div class="description">How thriving! We have been awarded and commended by Citi as a Top Innovator in the Citi Mobile Challenge Asia Pacific!</div>
+											<div onclick="window.location.href='news.html#2015121600';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">DEC</div>
+											<div class="day">13</div>
+										</div>
+										<div class="content">
+											<div class="title">Yahoo! Developer Network Event</div>
+											<div class="description">We were so excited to participate Yahoo! Yodel Meetup Event again!  Our CEO Willy shared about how we monetize with our apps.</div>
+											<div onclick="window.location.href='news.html#2015121300';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">DEC</div>
+											<div class="day">02</div>
+										</div>
+										<div class="content">
+											<div class="title">Google provides a new way to track foot traffic?</div>
+											<div class="description">For those who hate lining up for restaurants and stores, here comes the good news.</div>
+											<div onclick="window.location.href='news.html#2015120200';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">NOV</div>
+											<div class="day">26</div>
+										</div>
+										<div class="content">
+											<div class="title">Yahoo! Yodel Meetup Event</div>
+											<div class="description">It's always great to meet and talk with the app developers! Our CTO Jeff Chau spoke at Yahoo! Yodel Meetup Event.</div>
+											<div onclick="window.location.href='news.html#2015112600';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">NOV</div>
+											<div class="day">14</div>
+										</div>
+										<div class="content">
+											<div class="title">Staying one step ahead of others is key to success</div>
+											<div class="description">How market-fed is your app? Our CEO Willy shared his inspiration and experience on app development.</div>
+											<div onclick="window.location.href='news.html#2015111400';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">OCT</div>
+											<div class="day">16</div>
+										</div>
+										<div class="content">
+											<div class="title">Mtel supports the Digital Inclusion Mobile Apps Scheme</div>
+											<div class="description">Our CEO Willy Wong delivered the keynote speech today at the "When NGO bumps into an IT person" (NGO?‡ITäººæ??‹ç???. It has been a great event to gather and share the market insights with NGOs.</div>
+											<div onclick="window.location.href='news.html#1416102015';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">SEP</div>
+											<div class="day">30</div>
+										</div>
+										<div class="content">
+											<div class="title">Mobile-First. Connect. Inspire. -- Explorium launches in Shanghai successfully</div>
+											<div class="description">Mtel is gratified to be one of the digital solution providers for Omni-channel.</div>
+											<div onclick="window.location.href='news.html#1430092015';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>								
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">SEP</div>
+											<div class="day">18</div>
+										</div>
+										<div class="content">
+											<div class="title">So crowded! 'Mtel being filled with youthful vigor'</div>
+											<div class="description">Students from the School of Infocomm, Republic Polytechnic Singapore paid a visit to Mtel</div>
+											<div onclick="window.location.href='news.html#1418092015';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">SEP</div>
+											<div class="day">16</div>
+										</div>
+										<div class="content">
+											<div class="title">Mtel's sponsored Customer Loyalty Hong Kong Conference 2015</div>
+											<div class="description">It has been a wonderful event! Inspiration from Customer Loyalty Hong Kong Conference 2015</div>
+											<div onclick="window.location.href='news.html#1441015866';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">AUG</div>
+											<div class="day">31</div>
+										</div>
+										<div class="content">
+											<div class="title">Mtel partners with VMWARE and becomes the reseller of AirWatch</div>
+											<div class="description">We are excited to announce that Mtel has become the professional partner of VMware, as well as the official reseller of AirWatch. </div>
+											<div onclick="window.location.href='news.html#1441015864';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>								
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">JUL</div>
+											<div class="day">27</div>
+										</div>
+										<div class="content">
+											<div class="title">Mtel joins the HK4As as a member</div>
+											<div class="description">We are pleased to become an affiliated member of the Association of Accredited Advertising Agencies of Hong Kong (HK4As). </div>
+											<div onclick="window.location.href='news.html#1427342826';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>								
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">JUL</div>
+											<div class="day">23</div>
+										</div>
+										<div class="content">
+											<div class="title">When Emoji are turned into real food</div>
+											<div class="description">There is always a question that why some people take ages to read a menu, while others can decide what to eat in seconds. Now the deliverer is there for those who are not used to speak to a delivery guy or find hard to decide what to eat ??just tweet a food emoji and get real food delivered.</div>
+											<div onclick="window.location.href='news.html#1437001201';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>								
+								<div class="swiper-slide"> 
+									<div class="news">
+										<div class="date">
+											<div class="month">JUN</div>
+											<div class="day">12</div>
+										</div>
+										<div class="content">
+											<div class="title">Mtel puts their tagline into practice in Retail Asia Expo 2015</div>
+											<div class="description">Mobile first. Connect. Inspire. ??Just as its tagline speaks, Mtel Limited turned their brand spirit into action in Hong Kong Convention and Exhibition Centre from 9th to 11th this June. Retail Asia Expo is an annual trade show and conference that caters to retailers in Asia Pacific. The expo showcases retail solutions from over 200 local and international exhibitors and plenty of networking opportunities including seminars, gala dinner, cocktail reception, and retail awards. </div>
+											<div onclick="window.location.href='news.html#1434004211';" class="readMoreBtn small">
+												<a>more info</a>
+												<div class="line-top">&nbsp;</div>
+												<div class="line-right">&nbsp;</div>
+												<div class="line-bottom">&nbsp;</div>
+												<div class="line-left">&nbsp;</div>
+											</div>
+										</div>
+									</div>
+								</div>								
+							</div>					
+						</div>					
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section s8">				
+			<div class="textBlock">
+				<div class="title1">our</div>
+				<div class="title2">clients</div>
+				<div class="title3"><div class="miniBar">&nbsp;</div></div>
+				<div class="content">They are all leading corporations in the regions. They come from various industries, including retail, finance, insurance, telecommunications, advertising, and public utilities.</div>
+				<div class="clientContainer">
+					<div class="clientDiv">		
+						<div class="prevBtn"></div>						
+						<div class="nextBtn"></div>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+									<div class="swiper-slide"> 
+										<div class="client c1" title="A.S. Watson Group" style="background-image: url('images/home/A.S Watson.png')"></div>
+									</div>
+									<div class="swiper-slide"> 
+										<div class="client c2" title="HKIA" style="background-image: url('images/home/hkia.png')"></div>
+									</div>								
+									<div class="swiper-slide"> 
+										<div class="client c3" title="Starbucks" style="background-image: url('images/home/starbucks.png')"></div>
+									</div>
+									<div class="swiper-slide"> 
+										<div class="client c4" title="LI & FUNG" style="background-image: url('images/home/LiFung.png')"></div>
+									</div>
+									<div class="swiper-slide"> 
+										<div class="client c5" title="Manulife" style="background-image: url('images/home/manulife.png')"></div>
+									</div>
+							</div>
+						</div>						
+					</div>					
+				</div>
+				<div class="readMoreBtn" onclick="window.location.href='about.html'">
+					<a href="about.html">read more</a>
+					<div class="line-top">&nbsp;</div>
+					<div class="line-right">&nbsp;</div>
+					<div class="line-bottom">&nbsp;</div>
+					<div class="line-left">&nbsp;</div>
+				</div>
+			</div>					
+			<div id="map-canvas"></div>
+		</section>
+	</div>
+	<footer>
+		<% include templates/layout.footer.ejs%>				
+	</footer>
+</div>
+    <script type="text/javascript" src="vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>

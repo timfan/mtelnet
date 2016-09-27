@@ -2,6 +2,8 @@
   "name": "mtelnet",
   "description": "mtel website",
   "dependencies": {
+    "ejs": "2.5.x",
+    "express": "4.14.x",
     "jade": "1.9.x",
     "marked": "0.3.x",
     "stylus": "0.50.x",

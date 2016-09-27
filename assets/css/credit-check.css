@@ -1,0 +1,608 @@
+ .detailPage {
+     background-color: #FFF
+ }
+ 
+ .nav>li {
+     color: #999;
+ }
+ 
+ .overlay .nav>li {
+     color: #FFF;
+ }
+ 
+ .whiteLogo {
+     opacity: 0;
+     position: absolute;
+     transition-duration: .8s;
+ }
+ 
+ .greyLogo {
+     opacity: 1;
+     position: absolute;
+     transition-duration: .8s;
+ }
+ 
+ .overlay .whiteLogo {
+     opacity: 1;
+ }
+ 
+ .overlay .greyLogo {
+     opacity: 0;
+ }
+ /*====================== Section 1 ======================*/
+ 
+ .section .textBlock .title1 {
+     color: #FFF;
+ }
+ 
+ .detailPage .section.s1 .title2 {
+     margin: 10px 0px 30px 0px;
+ }
+ 
+ .detailPage .section.s1 .leftPart {
+     width: 55%;
+     float: left;
+     padding-top: 210px;
+ }
+ 
+ .detailPage .section.s1 .rightPart {
+     width: 45%;
+     float: left;
+ }
+ .detailPage .section.s1 .rightPart img{
+    margin-top: 130px;
+ }
+ .overview {
+     display: inline-block;
+ }
+ .detailPage .section.s1 .content ul{
+    padding: 0px;
+ }
+ .features {
+     margin-top: 90px;
+ }
+ 
+ .features .title {
+     color: #000;
+     text-align: center;
+     font-size: 36px;
+     line-height: 36px;
+     margin-bottom: 60px;
+ }
+ 
+ .features .feature {
+     float: left;
+     list-style: none;
+     width: 25%;
+     padding: 0px 60px;
+ }
+ 
+ .features .feature .top {
+     color: #00BDF1;
+     padding-bottom: 10px;
+     text-transform: uppercase;
+     text-align: center;
+ }
+ 
+ .features .feature .details {
+     text-align: center;
+     color: #666;
+ }
+ 
+ .detailPage .section.s1 {
+     height: auto;
+     min-height: auto;
+     max-height: none;
+     background-repeat: no-repeat;
+     background-position-y: -65px;
+     background-size: 1920px 1181px;
+     padding-bottom: 100px;
+ }
+ 
+ .detailPage .section.s1 .content {
+     width: 100%;
+     max-width: 100%;
+     font-size: 16px;
+     line-height: 30px;
+ }
+ 
+ .detailPage .section.s1 .textBlock {
+     margin-top: 5%;
+     width: 90%;
+     left: 5%;
+ }
+ 
+ .sepLine {
+     height: 1px;
+     width: 40%;
+     background: rgba(255, 255, 255, .5);
+     margin: 10px 0px 10px 0px;
+ }
+ 
+ .platform .row {
+     margin: 0px 0px 15px 0px;
+ }
+ 
+ img.qrcode {
+     width: 120px;
+ }
+ 
+ .appIcons {
+     height: 50px;
+ }
+ 
+ .appIcons.iOS {
+     margin-bottom: 15px;
+     vertical-align: top;
+ }
+ /*====================== Section 2 ======================*/
+ 
+ .videoContainer {
+     width: 100%;
+     margin: auto;
+ }
+ 
+ .videoContainer .videoDiv {
+     width: 100%;
+     margin: auto;
+     position: relative;
+ }
+ 
+ .videoContainer .videoDiv .video {
+     width: 100%;
+     margin: auto;
+ }
+ 
+ .swiper-container {
+     width: 90%;
+ }
+ 
+ .swiper-pagination {
+     text-align: center;
+     margin: 40px 0px;
+ }
+ 
+ .swiper-pagination-switch {
+     display: inline-block;
+     width: 15px;
+     height: 15px;
+     border-radius: 15px;
+     background: #2D92DC;
+     box-shadow: none;
+     margin: 0px 15px;
+     cursor: pointer;
+ }
+ 
+ .swiper-active-switch {
+     background: #fff;
+     border: 2px solid #2D92DC;
+ }
+ 
+ .prevBtn {
+     background: url('../images/works/left_arrow.png') 50% 50% no-repeat;
+     background-size: 33px 59px;
+     width: 33px;
+     height: 59px;
+     cursor: pointer;
+     position: absolute;
+     z-index: 2;
+     left: 100px;
+     top: 50%;
+     margin-top: -59px;
+     display: block;
+ }
+ 
+ .nextBtn {
+     background: url('../images/works/right_arrow.png') 50% 50% no-repeat;
+     background-size: 33px 59px;
+     width: 33px;
+     height: 59px;
+     cursor: pointer;
+     position: absolute;
+     z-index: 2;
+     right: 100px;
+     top: 50%;
+     margin-top: -59px;
+     display: block;
+ }
+ 
+ .section.s2 .appPart .title {
+     color: #000;
+     text-align: center;
+     font-size: 36px;
+     margin-bottom: -5px;
+ }
+ 
+ .section.s2 .appPart .subtitle {
+     color: #333;
+     text-align: center;
+     font-size: 24px;
+     margin-bottom: 60px;
+     letter-spacing: 2px;
+ }
+ 
+ .section.s2 .appPart .appIcon {
+     text-align: center;
+     margin-bottom: 20px;
+     color: #00BDF1;
+ }
+ 
+ .section.s2 .appPart .appIcon div {
+     padding-top: 20px;
+     width: 330px;
+     margin: auto;
+     font-size: 22px;
+ }
+ 
+ .section.s2 .appPart .moreDetails {
+     width: 450px;
+     margin: auto;
+     text-align: center;
+     color: #999;
+     padding-bottom: 100px;
+ }
+ /*====================== Section 3 ======================*/
+ 
+ .section.s3 {
+     background: rgba(245, 245, 245, 1);
+ }
+ 
+ .section.s3 .title {
+     color: #000;
+     text-align: center;
+     font-size: 36px;
+     padding-top: 80px;
+ }
+ 
+ .section.s3 .moreInfoPart.tnc .title,
+ .section.s3 .moreInfoPart.privacy .title {
+     background: #00BDF1;
+     color: white;
+     width: 90%;
+     margin: auto;
+     text-align: left;
+     font-size: 20px;
+     padding: 20px 30px;
+ }
+ 
+ .section.s3 .moreInfo {
+     display: block;
+ }
+ 
+ .section.s3 .moreInfo.mobile {
+     display: none;
+ }
+ 
+ .section.s3 .moreInfo ul {
+     display: table;
+     margin: auto;
+     padding: 0px;
+     padding-bottom: 70px;
+ }
+ 
+ .section.s3 .moreInfo li {
+     float: left;
+     list-style: none;
+     width: 33.333333%;
+ }
+ 
+ .section.s3 .moreInfo li .infoBox {
+     margin: 0px 15px;
+     margin-top: 30px;
+     cursor: pointer;
+ }
+ 
+ .section.s3 .moreInfo li .infoBox img {
+     width: 100%;
+ }
+ 
+ .section.s3 .moreInfo li .infoBox[status="inactive"] {
+     opacity: .3;
+ }
+ 
+ .section.s3 .moreInfoPart {
+     background: white;
+     width: 100%;
+     margin: auto;
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display: none;
+ }
+ 
+ .section.s3 .moreInfoPart.tnc .container,
+ .section.s3 .moreInfoPart.privacy .container {
+    width: 90%;
+    height: 600px;
+    border: 2px solid rgba(245, 245, 245, 1);
+    overflow-y: scroll;
+    padding: 30px 50px;
+    background: white;
+ }
+ .section.s3 .moreInfoPart ul {
+     padding: 0px;
+     width: 90%;
+     margin: auto;
+ }
+ 
+ .section.s3 .moreInfoPart.faq li {
+     list-style: none;
+     background: rgba(245, 245, 245, 1);
+     height: 212px;
+ }
+ 
+ .section.s3 .moreInfoPart .question {
+     background: white;
+     width: 100%;
+     display: inline-table;
+ }
+ 
+ .section.s3 .moreInfoPart .question .headBox {
+     background: #00BDF1;
+     color: white;
+     text-align: center;
+     float: left;
+     font-size: 58px;
+     width: 135px;
+     height: 210px;
+     line-height: 210px;
+ }
+ 
+ .section.s3 .moreInfoPart .question .content {
+     height: 210px;
+     font-size: 20px;
+     line-height: 35px;
+     display: table-cell;
+     vertical-align: middle;
+     padding-left: 50px;
+     width: 100%;
+ }
+ 
+ .section.s3 .moreInfoPart .question .more {
+     background: url('../images/works/up.png') 50% 50% no-repeat;
+     background-size: 24px 15px;
+     height: 210px;
+     width: 150px;
+     transition-duration: .5s;
+     transform-origin: 50%;
+     transform: rotateZ(0deg);
+     cursor: pointer;
+ }
+ 
+ .section.s3 .moreInfoPart .question .more[status="hide"] {
+     transform: rotateZ(180deg);
+ }
+ 
+ .section.s3 .moreInfoPart .answer {
+     background: rgba(245, 245, 245, 1);
+     display: none;
+     width: 100%;
+ }
+ 
+ .section.s3 .moreInfoPart .answer .headBox {
+     background: rgba(245, 245, 245, 1);
+     color: #333;
+     text-align: center;
+     float: left;
+     font-size: 58px;
+     width: 135px;
+     min-height: 210px;
+     line-height: 210px;
+ }
+ 
+ .section.s3 .moreInfoPart .answer .content {
+     min-height: 210px;
+     font-size: 18px;
+     display: table-cell;
+     vertical-align: middle;
+     padding: 30px 150px 30px 50px;
+     width: 100%;
+ }
+ 
+ @media screen and (min-width:1000px) {
+     .detailPage .section.s1 .textBlock {
+         left: 5%
+     }
+ }
+ 
+ @media screen and (max-width:1700px) {
+    .detailPage .section.s1 {
+         background-position-y: -80px;
+     }
+ }
+ @media screen and (max-width:1600px) {
+     .detailPage .section.s1 {
+         background-position-y: -80px;
+     }
+ }
+ 
+ @media screen and (max-width:1600px) {
+     .detailPage .section.s1 {
+         background-position-y: -100px;
+         background-size: 1920px 1300px;
+     }
+
+ }
+ 
+ @media screen and (max-width:1300px) {
+     .nextBtn {
+         right: 5%;
+     }
+     .prevBtn {
+         left: 5%;
+     }
+     .detailPage .section.s1 .rightPart img {
+         margin-top: 100px;
+     }
+ }
+ 
+ @media screen and (max-width:1200px) {
+     .features .feature {
+         width: 50%;
+         padding: 20px;
+     }
+ }
+ 
+ @media screen and (max-width:1100px) {
+     .detailPage .section.s1 {
+         background-size: 1920px 1500px;
+         background-position-y: -130px;
+     }
+ }
+ @media screen and (max-width:1000px) {
+    .detailPage .section.s1 {
+         background-position-y: -120px;
+     }
+     .detailPage .section.s1 .leftPart {
+         float: none;
+         width: 100%;
+     }
+     .detailPage .section.s1 .rightPart {
+         float: none;
+         width: 100%;
+         text-align: center;
+     }
+     .detailPage .section.s1 .rightPart img {
+         width: 80%;
+         margin-top: 0px;
+     }
+     .section.s3 .moreInfo li .infoBox {
+         margin: 0px;
+     }
+ }
+ 
+ @media screen and (max-width:768px) {
+    .platform{
+        /*display: none;*/
+    }
+    .nextBtn, .prevBtn {
+        background-size: 50%
+    }
+     .section.s3 .moreInfo {
+         display: none;
+     }
+     .section.s3 .moreInfo.mobile {
+         display: block;
+     }
+
+     .section.s3 .moreInfo.mobile li {
+         float: none;
+         width: 100%;
+     }
+
+     .detailPage .section.s1 .leftPart {
+         padding-top: 150px;
+     }
+     .detailPage .section.s1 .rightPart img {
+         width: 80%;
+     }
+     .section.s2 .appPart .title {
+         font-size: 28px;
+     }
+
+    .section.s2 .appPart .appIcon div {
+        width: 300px;
+    }
+    .section.s2 .appPart .moreDetails {
+        width: 400px;
+    }
+     .features {
+         margin-top: 30px;
+     }
+     .features .feature {
+        padding: 10px;
+        line-height: 24px;
+    }
+    .features .feature .top img{
+        width: 60%;
+        max-width: 132px;
+    }
+     .features .title {
+         font-size: 28px;
+         margin-bottom: 0px;
+     }
+     .section.s3 .title {
+         font-size: 28px;
+         padding-top: 30px;
+     }
+     .section.s3 .moreInfoPart{
+        padding-top: 50px;
+     }
+     .section.s3 .moreInfoPart.tnc .title, 
+     .section.s3 .moreInfoPart.privacy .title{
+        width: 100%;
+     }
+     .section.s3 .moreInfoPart .question .content {
+         font-size: 18px;
+         padding-left: 20px;
+     }
+     .section.s3 .moreInfoPart .answer .content {
+         padding: 30px 50px 30px 20px;
+     }
+     .section.s3 .moreInfoPart .question .more {
+         width: 50px;
+     }
+     .section.s3 .moreInfoPart ul {
+         width: 100%;
+     }
+     .section.s3 .moreInfoPart.tnc .container,
+     .section.s3 .moreInfoPart.privacy .container {
+        width: 100%;
+        padding: 30px 30px;
+     }
+ }
+ @media screen and (max-width:414px) {
+    .detailPage .section.s1{
+        padding-bottom: 30px;
+    }
+
+    .detailPage .section.s1 .leftPart {
+        padding-top: 100px;
+    }
+    .detailPage .section.s1 .content {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .section.s2 .appPart .appIcon div {
+        width: 300px;
+        font-size: 18px;
+    }
+    .section.s2 .appPart .moreDetails {
+        width: 300px;
+    }
+    .section.s3 .moreInfoPart.faq li{
+        height: 152px;
+    }
+    .section.s3 .moreInfoPart .question .content {
+        font-size: 15px;
+        padding-left: 20px;
+        line-height: 22px;
+    }
+    .section.s3 .moreInfoPart .question .headBox {
+        font-size: 36px;
+        width: 50px;
+        height: 150px;
+        line-height: 150px;
+    }
+    .section.s3 .moreInfoPart .question .content{
+        height: 150px;
+    }
+    .section.s3 .moreInfoPart .question .more{
+        height: 150px;
+    }
+    .section.s3 .moreInfoPart .answer .headBox{
+        width: 50px;
+        font-size: 36px;
+    }
+    .section.s3 .moreInfoPart .answer .content{
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .section.s3 .moreInfoPart.tnc .title, 
+    .section.s3 .moreInfoPart.privacy .title{
+        padding: 20px 15px;
+    }
+     .section.s3 .moreInfoPart.tnc .container,
+     .section.s3 .moreInfoPart.privacy .container {
+        padding: 30px 15px;
+     }
+ }
