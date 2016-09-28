@@ -3126,6 +3126,9 @@
      line-height: 30px
  }
  
+ .newsDetailsContainer{
+     display: none;
+ }
  #news .section .content form {
      display: inline-block;
      margin: 20px auto 50px auto;

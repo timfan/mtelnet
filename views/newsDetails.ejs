@@ -1,0 +1,24 @@
+<script defer="defer"  src="scripts/newsview.js"></script>
+
+<div class="return">&lt;&nbsp;Back</div>
+
+<% for(var i=0; i< contentful.news.length; i++){ 
+	var news = contentful.news[i];
+
+%>
+<div class="newsDetailsContainer" ref="<%= news.date.split('T')[0].replace(/\-/g,'') %>00">
+	<div class="title"><%=news.title%></div>
+
+	<div class="side">
+		<div class="description"><%= news.shortDescription %></div>
+		<div class="tags"><%= news.tags %></div>
+		<div class="date"><%= news.date.split('T')[0].split('-')[2] %>.<%= news.date.split('T')[0].split('-')[1] %>.<%= news.date.split('T')[0].split('-')[0] %></div>
+	</div>
+	<div class="main"><%- news.longDescription %></div>
+	<div class="clear"/>
+</div>
+<% } %>
+
+<script>
+	$('.newsDetailsContainer[ref="'+getParams(window.location.href)+'"]').show();
+</script>
