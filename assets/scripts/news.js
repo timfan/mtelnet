@@ -1,23 +1,20 @@
 $(function(){
 	$('html').niceScroll();
 	if (getParams(window.location.href)!=undefined) {
-		$.ajax({
-			url: "asset/news/"+getParams(window.location.href)+".html",
-			type: 'GET',
-			success: function(content){
-				$(".newslist").hide();
-				$(".newsview").show();
-				$(".newsview").html(content);
-			}
-		});
+		
+		var content = getParams(window.location.href);
+		$(".newslist").hide();
+		$(".newsview").show();
+		$(".newsview").html(content);
+		
 	}else{
 		$(".newsview").hide();
 		$(".newslist").load("newsList.html");
 		$(".newslist").show();
 	}
 	
-	var subID = '406'; //DEV
-	//var subID = '100'; //Prod
+	// var subID = '406'; //DEV
+	var subID = '100'; //Prod
 	
 	$('.subscribeFormBtn').click(function(){
 		setTimeout(function(){
