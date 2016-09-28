@@ -14,7 +14,7 @@
 		<div class="tags"><%= news.tags %></div>
 		<div class="date"><%= news.date.split('T')[0].split('-')[2] %>.<%= news.date.split('T')[0].split('-')[1] %>.<%= news.date.split('T')[0].split('-')[0] %></div>
 	</div>
-	<div class="main"><%- news.longDescription %></div>
+	<div class="main"><%= news.longDescription %></div>
 	<div class="clear"/>
 </div>
 <% } %>
