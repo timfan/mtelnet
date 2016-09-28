@@ -146,7 +146,7 @@
 									<div class="swiper-slide"> 
 										<div class="news">
 											<div class="date">
-												<div class="month"><%
+												<div class="month"><%=news.date%><%
 														var monthShortNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 												 	%><%= monthShortNames[new Date(news.date).getMonth()] %></div>
 												<div class="day"><%= new Date(news.date).getDate() %></div>

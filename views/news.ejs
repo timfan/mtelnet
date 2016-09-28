@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<% include templates/layout.head.ejs%>
+</head>
+<body>
+<div id="cover"></div>
+<div id="news">
+	<header>
+		<% include templates/layout.header.ejs%>
+	</header>
+	<div id="mainContent">						
+		<section style="background-image: url('images/7.0_news_output-assets/news-background.png')" class="section s1">
+			<div class="textBlock">
+				<div class="title1">Explore our</div>
+				<div class="title2">News</div>
+				<div class="title3"><div class="miniBar">&nbsp;</div></div>
+				<!--<div class="title4">hong kong headquarter</div>-->
+				<div class="content">
+					Email, text, social media, mobile apps - these are the new links to your customers.<br>We are the digital platform and personal touch, all in one
+					<br>
+					<a class="subscribeBtn readMoreBtn">Subscribe<img src="images/news/rss.png"></a>
+					<form role="form">
+						<div class="subsrcibeInput">
+							<label for="email">Email:</label>
+							<input type="email" class="subscribeFormEmail" id="email">
+						</div>
+						<a href="#" class="subscribeFormBtn readMoreBtn">Subscribe<img src="images/news/rss.png"></a>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="section s2">
+			<div class="newslist"></div>
+			<div class="newsview"></div>
+		</section>	
+	</div>
+	<footer>
+		<% include templates/layout.footer.ejs%>				
+	</footer>			
+</div>    <script type="text/javascript" src="vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="scripts/tinybox.js"></script>
+    <script type="text/javascript" src="scripts/news.js"></script>
+</body>
+</html>
