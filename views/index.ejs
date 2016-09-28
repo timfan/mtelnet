@@ -146,22 +146,15 @@
 									<div class="swiper-slide"> 
 										<div class="news">
 											<div class="date">
-												<div class="month">
-													<%=news.date%>
-													***<%=new Date(news.date).getMonth()%>***
-													<%
+												<div class="month"><%
 														var monthShortNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
-												 	%><%= monthShortNames[new Date(news.date).getMonth()] %></div>
-												<div class="day"><%= new Date(news.date).getDate() %></div>
+												 	%><%= monthShortNames[news.date.split('T')[0].split('-')[1] * 1.0-1] %></div>
+												<div class="day"><%= news.date.split('T')[0].split('-')[2] %></div>
 											</div>
 											<div class="content">
 												<div class="title"><%= news.title %></div>
 												<div class="description"><%= news.shortDescription %></div>
-												<div onclick="window.location.href='news.html#<%
-													var newsDate = new Date(news.date);
-												    var yyyy = newsDate.getFullYear().toString();
-												    var mm = (newsDate.getMonth()+1).toString();
-												    var dd  = newsDate.getDate().toString();%><%= yyyy+(mm[1]?mm:"0"+mm[0])+(dd[1]?dd:"0"+dd[0]) %>00';" class="readMoreBtn small">
+												<div onclick="window.location.href='news.html#<%= news.date.split('T')[0].replace(/\-/g,'') %>00';" class="readMoreBtn small">
 													<a>more info</a>
 													<div class="line-top">&nbsp;</div>
 													<div class="line-right">&nbsp;</div>
