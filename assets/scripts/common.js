@@ -13,6 +13,30 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-78503281-1', 'auto'); //Dev
 ga('send', 'pageview');
 
+var ratio = 560/315; //youtube default ratio
+
+function screenResize(){
+	var w = $(window).width();
+	
+	if(w>1200){
+		w=1200;
+	}
+
+	if($(window).width() > 768 ){
+		$('.youtubePlayer').attr('width',w*.6*.8);
+		$('.youtubePlayer').attr('height',w*.6*.8/ratio);
+	}else{
+		$('.youtubePlayer').attr('width',w*.9);
+		$('.youtubePlayer').attr('height',w*.9/ratio);
+	}
+}
+
+screenResize();
+$( window ).resize(function() {
+	screenResize();
+});			
+
+
 function setHeaderBG(){
 	var yPos = $(window).scrollTop();
 	var slide1H = $('section.s1').height();
@@ -53,9 +77,6 @@ $(document).ready(function() {
 		setHeaderBG();
 	}); 
 	setHeaderBG();
-});
 
-//footer
-$(document).ready(function () {
 	$('footer .copyright').html('copyright © 1999-'+new Date().getFullYear()+' mtel limited. all rights reserved.');
 });
