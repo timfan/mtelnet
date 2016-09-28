@@ -36,20 +36,16 @@
 </div>
 <div class="resultContainer">
 	<div class="resultSection">
-		
-		<div data-name="2016090100" class="result IoT Smart-City Insight ">
-			<div class="title">Building a smarter City via IoT</div>
-			<div class="description">
-				The impact of IoT on our daily life is going to be tremendous as it helps to build a better city. What is the secret to unlock the potential of IoT?
-			</div>
-			<div class="tags">   
-				Insight, IoT, Smart City
-			</div>
-			<div class="date">
-				01.09.2016
-			</div>
+		<% for(var i=0; i< contentful.news.length; i++){ 
+			var news = contentful.news[i];
+		%>
+		<div data-name="<%= news.date.split('T')[0].replace(/\-/g,'') %>00" class="result <%= news.tags.replace(/, /g,',').replace(/ /g,'-').replace(/,/g,' ') %>">
+			<div class="title"><%= news.title %></div>
+			<div class="description"><%= news.shortDescription %></div>
+			<div class="tags"><%= news.tags %></div>
+			<div class="date"><%= news.date.split('T')[0].split('-')[2] %>.<%= news.date.split('T')[0].split('-')[1] %>.<%= news.date.split('T')[0].split('-')[0] %></div>
 			<div class="moreBtn"></div>
 		</div>
-		
+		<% } %>
 	</div>					
 </div>

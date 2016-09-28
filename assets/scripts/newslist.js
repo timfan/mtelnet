@@ -35,17 +35,8 @@ $('.result:visible').last().addClass('lastResult');
 
 $('.result').click(function(){
 	window.location.href="news.html#"+$(this).attr("data-name")
-	$.ajax({
-		url: "asset/news/"+getParams(window.location.href)+".html",
-		type: 'GET',
-		success: function(content){
-			$(".newslist").fadeOut(1000,function(){
-				$(".newsview").show();
-				window.location.href="#"+getParams(window.location.href)
-			});
-			$(".newsview").html(content);
-			$('html').getNiceScroll().resize();
-		}
-	});
+	var content ='test';
+	$(".newsview").html(content);
+	$('html').getNiceScroll().resize();
 });
 
