@@ -7,7 +7,11 @@ marked       = require 'marked'
 
 module.exports =
   ignores: [
-    'readme.md', '**/layout.*', '**/_*', '.gitignore', 'contentful.coffee',
+    'readme.md', 
+    '**/layout.*', 
+    '**/_*', 
+    '.gitignore', 
+    'contentful.coffee',
     'Makefile', 'ship*'
   ]
 

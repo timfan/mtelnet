@@ -4,7 +4,7 @@ module.exports =
   space_id: 'irxgrz69v8ym'
   content_types:                   # remove these object braces once the config below is filled out
     home:                          # data will be made available through this key on the `contentful` object in your templates
-      id: 'home'                    # ID of your content type
+      id: 'home'                   # ID of your content type
     header:
 	    id: 'header'  
     news:

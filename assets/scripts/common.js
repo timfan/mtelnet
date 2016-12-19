@@ -31,7 +31,7 @@ function screenResize(){
 	}
 }
 
-screenResize();
+
 $( window ).resize(function() {
 	screenResize();
 });			
